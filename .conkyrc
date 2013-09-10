@@ -1,0 +1,46 @@
+ualignment bottom_middle
+background no
+border_width 1
+cpu_avg_samples 2
+default_color 222222
+default_outline_color 222222
+draw_borders no
+draw_graph_borders yes
+draw_outline no
+draw_shades no
+use_xft yes
+xftfont Sans Mono:size=10
+gap_x 5
+gap_y 0
+minimum_size 1260 6
+maximum_width 1260
+net_avg_samples 2
+no_buffers yes
+out_to_console no
+out_to_stderr no
+extra_newline no
+own_window no
+own_window_class Conky
+own_window_type desktop
+own_window_transparent yes
+stippled_borders 0
+update_interval 2.5
+uppercase no
+use_spacer left
+show_graph_scale no
+show_graph_range no
+format_human_readable yes
+double_buffer yes
+
+color1 008B8B
+color2 888888
+color3 444444
+color4 37FDFC
+color5 112421
+
+TEXT
+${color1}Activity on /dev/sda:${color} ${diskiograph 10,50 000000 ff0000 -t} \
+${color1}eth0 ${color4}[${addr eth0}]${color1} Up:${color4}${upspeed eth0}${color1} - Down:${color4}${downspeed eth0} \
+${color1}CPU:${color4} ${cpu}% ${cpubar cpu0 5,50}  \
+${color1}RAM:${color4}${memperc}% ${membar 5,50} \
+${color1}Now Playing: ${color4}${execi 5 ~/Code/Scripts/cmus-conky.sh}
