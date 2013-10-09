@@ -21,3 +21,6 @@
     b = branch
     ba = branch -a
     bl = blame
+    nv = commit --no-verify
+[init]
+    templatedir = ~/.config/git_templates/

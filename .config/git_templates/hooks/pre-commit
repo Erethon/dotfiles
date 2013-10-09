@@ -1,0 +1,2 @@
+pep8 `git diff HEAD  --name-only`
+flake8 `git diff HEAD --name-only`
