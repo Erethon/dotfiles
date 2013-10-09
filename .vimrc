@@ -16,9 +16,9 @@ set softtabstop=4
 "Controls how many spaces are indented when > and < is used
 set shiftwidth=4
 
-"Remove trailing whitespace for .py and .rst files                                       
-autocmd BufWritePre *.py :%s/\s\+$//e   
-autocmd BufWritePre *.rst %s/\s\+$//e   
+"Remove trailing whitespace for .py and .rst files
+autocmd BufWritePre *.py :%s/\s\+$//e
+autocmd BufWritePre *.rst %s/\s\+$//e
 
 "Show line numbers
 set number
@@ -40,8 +40,12 @@ set mat=2
 colorscheme pychimp
 
 "Show a blue vertical line on the 80th character (pep8 compliant)
-set colorcolumn=80
-highlight ColorColumn ctermbg=23
+if exists('+colorcolumn')
+  set colorcolumn=80
+  highlight ColorColumn ctermbg=23
+else
+  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+endif
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -59,7 +63,7 @@ nnoremap <c-l> gt
 "Use ';' instead of ':'
 nnoremap ; :
 
-"Faster Normal Mode 
+"Faster Normal Mode
 imap ii <Esc>
 
 "Pep8 checking
@@ -68,14 +72,17 @@ map <F5> :!pep8 % <Enter>
 "Easy set paste and set nopaste
 set pastetoggle=<F2>
 
+"Enable mouse in vim
+set mouse=a
+
 "Common typos
-"imap 
+"imap
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Random Stuff
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 "Enable pathogen add ons
-execute pathogen#infect()
+"execute pathogen#infect()
 
 
 filetype indent plugin on

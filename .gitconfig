@@ -1,0 +1,23 @@
+[core]
+    mergeoptions = --no-ff --no-commit
+    editor = vim
+
+[user]
+    name = Erethon
+    email = info@erethon.com
+
+[merge]
+    ff = false
+    commit = false
+
+[color]
+    ui = true   
+
+[alias]
+    co = checkout
+    st = status
+    go = log --graph --pretty=oneline --abbrev-commit
+    lp = log --pretty=oneline
+    b = branch
+    ba = branch -a
+    bl = blame
