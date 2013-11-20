@@ -60,6 +60,9 @@ nnoremap <c-t> :tabnew
 nnoremap <c-h> gT
 nnoremap <c-l> gt
 
+"Use <Space> to go half-page down
+nnoremap <Space> <c-d>
+
 "Use ';' instead of ':'
 nnoremap ; :
 
