@@ -83,3 +83,4 @@ alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date
 alias g="git"
 alias v="vim"
 alias h="history | grep"
+alias less="less -R" #Enable color parsing by default
