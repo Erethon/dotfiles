@@ -1,0 +1,40 @@
+# Username/from
+set realname    = "Dionysis Grigoropoulos"
+set imap_user   = XXXXX
+set from        = XXXXX
+set use_from    = yes
+
+# Folder/Url settings
+set folder      = imaps://url.com:993
+set smtp_url    = smtp://username@smtps.url.gr:587
+set spoolfile   = +INBOX
+mailboxes       =INBOX
+set record      = +sent
+
+set ssl_starttls = yes
+set ssl_force_tls = yes
+
+# Refresh internal/editor/mail settings
+set mail_check  = 240
+set editor = vim
+set edit_headers = yes
+
+# Keybinds
+bind index G    last-entry
+bind index j    next-entry
+bind index k    previous-entry
+bind index Q    next-unread
+
+color normal    white black
+color attachment brightyellow black
+color hdrdefault cyan black
+color indicator black cyan
+color markers   brightred black
+color quoted    green black
+color signature cyan black
+color status    brightgreen blue
+color tilde blue black
+color tree  red black
+
+color index red black ~D
+color index magenta black ~T
