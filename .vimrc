@@ -16,9 +16,12 @@ set softtabstop=4
 "Controls how many spaces are indented when > and < is used
 set shiftwidth=4
 
-"Remove trailing whitespace for .py and .rst files
-autocmd BufWritePre *.py :%s/\s\+$//e
-autocmd BufWritePre *.rst %s/\s\+$//e
+"Remove trailing whitespace for .py/.yml/.init/.rst/.spec files
+autocmd BufWritePre *.py :%s/\s\+$//e                                           
+autocmd BufWritePre *.yml :%s/\s\+$//e                                          
+autocmd BufWritePre *.init :%s/\s\+$//e                                         
+autocmd BufWritePre *.rst %s/\s\+$//e                                           
+autocmd BufWritePre *.spec %s/\s\+$//e   
 
 "Show line numbers
 set number
@@ -72,14 +75,21 @@ imap ii <Esc>
 "Pep8 checking
 map <F5> :!pep8 % <Enter>
 
-"Easy set paste and set nopaste
-set pastetoggle=<F2>
+"Git blame                                                                      
+map <F6> :!git blame % <Enter>                                                  
+                                                                                
+"Check number of characters in file                                             
+map <F4> :!wc -m %<CR>                                                          
+                                                                                
+"Easy set paste and set nopaste                                                 
+set pastetoggle=<F2>                                                            
+                                                                                
+"Spell checking                                                                 
+map <F7> :set spell<CR> 
 
 "Enable mouse in vim
 set mouse=a
 
-"Common typos
-"imap
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Random Stuff
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -87,6 +97,8 @@ set mouse=a
 "Enable pathogen add ons
 "execute pathogen#infect()
 
+"Start CtrlP                                                                    
+"set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 filetype indent plugin on
 filetype indent on
