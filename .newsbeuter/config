@@ -1,0 +1,23 @@
+# Update settings
+
+auto-reload yes
+reload-time 10
+reload-threads 2
+download-retries 2
+download-timeout 10
+
+color listfocus color111 default reverse bold
+text-width 80
+
+browser "firefox %u"
+
+bind-key j down feedlist
+bind-key k up feedlist
+bind-key j next articlelist
+bind-key k prev articlelist
+bind-key J next-feed articlelist
+bind-key K prev-feed articlelist
+bind-key j down article
+bind-key k up article
+
+confirm-exit yes
