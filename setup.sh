@@ -11,3 +11,4 @@ cp .bash_aliases ~
 cp .config/ls_col ~/.config
 cp .vim/colors/* ~/.vim/colors
 cp .newsbeuter/* ~/.newsbeuter
+cp .Xdefaults ~/.Xdefaults
