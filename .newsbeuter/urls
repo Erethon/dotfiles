@@ -24,3 +24,8 @@ http://www.reddit.com/r/mycology/.rss Gardening
 
 http://procrastinationranch.blogspot.gr/feeds/posts/default Homestead
 http://www.reddit.com/r/homestead/.rss Homestead
+
+https://github.com/grnet/synnefo/commits/develop.atom GitHub feeds
+https://github.com/ansible/ansible/commits/devel.atom Github feeds
+
+http://pipes.yahoo.com/pipes/pipe.run?_id=02bfefe73ba14054570ce82f1929e433&_render=rss&owner=grnet&repo=synnefo
