@@ -1,8 +1,8 @@
-http://www.reddit.com/r/networking/.rss DC
-http://www.reddit.com/r/homelab/.rss DC
-http://www.reddit.com/r/cableporn/.rss DC
-http://www.reddit.com/r/serverporn/.rss DC
-http://www.reddit.com/r/datahoarder/.rss DC
+https://www.reddit.com/r/networking/.rss DC
+https://www.reddit.com/r/homelab/.rss DC
+https://www.reddit.com/r/cableporn/.rss DC
+https://www.reddit.com/r/serverporn/.rss DC
+https://www.reddit.com/r/datahoarder/.rss DC
 
 http://feeds2.feedburner.com/hackaday/LgoM Tech
 http://www.bunniestudios.com/blog/?feed=rss2 Tech
@@ -11,20 +11,20 @@ http://rss.slashdot.org/Slashdot/slashdot Tech
 http://lowendtalk.com/discussions/feed.rss Cloud
 
 http://feeds.feedburner.com/RyanLanesBlog DevOps
-http://www.reddit.com/r/ansible/.rss DevOps
+https://www.reddit.com/r/ansible/.rss DevOps
 
 http://www.devttys0.com/feed/ Security
 http://buffered.io/atom.xml Security
-http://www.reddit.com/r/netsec/.rss Security
-http://www.reddit.com/r/reverseengineering/.rss Security
+https://www.reddit.com/r/netsec/.rss Security
+https://www.reddit.com/r/reverseengineering/.rss Security
 http://www.exploit-db.com/rss.xml Security
 
-http://www.reddit.com/r/gardening/.rss Gardening
-http://www.reddit.com/r/foraging/.rss Gardening
-http://www.reddit.com/r/mycology/.rss Gardening
+https://www.reddit.com/r/gardening/.rss Gardening
+https://www.reddit.com/r/foraging/.rss Gardening
+https://www.reddit.com/r/mycology/.rss Gardening
 
 http://procrastinationranch.blogspot.gr/feeds/posts/default Homestead
-http://www.reddit.com/r/homestead/.rss Homestead
+https://www.reddit.com/r/homestead/.rss Homestead
 
 https://github.com/grnet/synnefo/commits/develop.atom GitHub feeds
 https://github.com/ansible/ansible/commits/devel.atom Github feeds
