@@ -39,7 +39,7 @@ extract () {
 
 #Instant server
 servedir(){
-    sudo python -m SimpleHTTPServer 80
+    python -m SimpleHTTPServer $1
 }
 
 shutd(){
