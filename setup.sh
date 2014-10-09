@@ -5,6 +5,7 @@ mkdir -p ~/.vim/colors
 mkdir -p ~/.newsbeuter
 
 cp .gitconfig ~
+cp .tmux.conf ~
 cp .vimrc ~
 cp .bashrc ~
 cp .bash_aliases ~
