@@ -22,6 +22,7 @@ autocmd BufWritePre *.yml :%s/\s\+$//e
 autocmd BufWritePre *.init :%s/\s\+$//e                                         
 autocmd BufWritePre *.rst %s/\s\+$//e                                           
 autocmd BufWritePre *.spec %s/\s\+$//e   
+autocmd BufWritePre *.conf %s/\s\+$//e
 
 "Show line numbers
 set number
