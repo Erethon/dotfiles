@@ -19,6 +19,6 @@ root: ~/
 # tmux_command: byobu
 
 windows:
-  - mutt:
+  - mutt: mutt
   - newsbeuter: newsbeuter
   - term:
