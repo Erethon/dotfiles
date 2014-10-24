@@ -58,6 +58,9 @@ endif
 "Mapping 0 to go to first non-blank character of line
 map 0 ^
 
+"Map <leader> to ";"
+let mapleader = ";"
+
 "Use Ctrl + t for opening a new tab
 nnoremap <c-t> :tabnew
 "Use Ctrl + h/l for previous/next tab
@@ -66,9 +69,6 @@ nnoremap <c-l> gt
 
 "Use <Space> to go half-page down
 nnoremap <Space> <c-d>
-
-"Use ';' instead of ':'
-nnoremap ; :
 
 "Faster Normal Mode
 imap ii <Esc>
