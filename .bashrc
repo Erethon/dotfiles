@@ -122,4 +122,5 @@ PATH=$PATH:/sbin/
 PATH=$PATH:/usr/sbin/
 PATH=$PATH:/usr/bin/
 PATH=$PATH:/usr/local/sbin/
+PATH=$PATH:~/bin/
 export PATH
