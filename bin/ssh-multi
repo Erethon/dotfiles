@@ -1,7 +1,10 @@
-HOSTS=$(cat $1)
+if [ $# -gt 0 ]; then
+    HOSTS=$(cat $1)
+fi
 
+# Use $2 to pass arguments to SSH, e.g., "-o StrictHostKeyChecking=no"
 for host in $HOSTS; do
-    tmux split-window -h "ssh -l root $host"
+    tmux split-window -h "ssh -l root $2 $host"
     tmux select-layout tiled > /dev/null
 done
 
