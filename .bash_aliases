@@ -58,8 +58,6 @@ alias monitor="xrandr --output DVI-I-1 --mode 1920x1080 --left-of VGA-1"
 #Common typo
 alias les="less"
 
-#Paste to pastebin quickly
-alias pybin="python ~/Code/Scripts/pybin.py"
 #Open stdout in vim 
 alias vr="| vim -R -"
 

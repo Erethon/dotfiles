@@ -1,0 +1,47 @@
+#!/usr/bin/python
+# Erethon's terminal pastebin. It uses mechanize, so you don't need to have a
+# pastebin account/API key, but it's an overkill to use mechanize for something
+# simple like this.
+# License is the MIT license, see LICENSE and README.md files for more info.
+# For updates check https://erethon.com and https://github.com/erethon
+# Copyright (C) 2013 Erethon
+
+import sys
+import mechanize
+import argparse
+
+parser = argparse.ArgumentParser(formatter_class=argparse.RawTextHelpFormatter)
+parser.add_argument('infile', nargs='?', type=argparse.FileType('r'),
+                    default=sys.stdin)
+parser.add_argument('-e', '--expires', dest='expires', default='10M',
+                    help='Time until paste expires. Accepted values:\n'
+                    '10 minutes, 1 hour, 1 day, 1 week, 2 weeks, 1 month, '
+                    'never \n(10M, 1H, 1D, 1W, 2W, 1M, *N)')
+
+parser.add_argument('-v', '--visibility', dest='visibility', default='1',
+                    help='Set visibility of paste (0=public, 1=Unlisted)')
+
+parser.add_argument('-t', '--title', dest='title', default='',
+                    help='Set title of paste')
+
+
+arg = parser.parse_args()
+
+with arg.infile:
+    paste = arg.infile.read()
+
+br = mechanize.Browser()
+br.addheaders = [('User-agent', 'Mozilla/5.0 (X11; Linux x86_64)'
+                  'AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 '
+                  'Safari/535.11')]
+
+br.open("http://pastebin.com")
+
+br.select_form(nr=1)
+br.form['paste_code'] = paste
+br.form['paste_expire_date'] = [arg.expires, ]
+br.form['paste_private'] = [arg.visibility, ]
+br.form['paste_name'] = arg.title
+br.submit()
+
+print br.geturl()
