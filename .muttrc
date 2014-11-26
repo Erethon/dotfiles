@@ -25,6 +25,10 @@ bind index j    next-entry
 bind index k    previous-entry
 bind index Q    next-unread
 
+bind index,pager \CP sidebar-prev
+bind index,pager \CN sidebar-next
+bind index,pager \CO sidebar-open
+
 color normal    white black
 color attachment brightyellow black
 color hdrdefault cyan black
