@@ -23,6 +23,7 @@ http://buffered.io/atom.xml Security
 https://www.reddit.com/r/netsec/.rss Security
 https://www.reddit.com/r/reverseengineering/.rss Security
 http://www.exploit-db.com/rss.xml Security
+http://goto.fail/atom.xml Security
 
 https://github.com/grnet/synnefo/commits/develop.atom GitHub feeds
 https://github.com/ansible/ansible/commits/devel.atom Github feeds
