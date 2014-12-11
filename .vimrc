@@ -8,13 +8,13 @@
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+"call vundle#begin()
 
-Plugin 'kien/ctrlp.vim'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'tpope/vim-surround'
+"Plugin 'kien/ctrlp.vim'
+"Plugin 'scrooloose/nerdcommenter'
+"Plugin 'tpope/vim-surround'
 
-call vundle#end()
+"call vundle#end()
 filetype plugin indent on
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
