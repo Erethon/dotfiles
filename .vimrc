@@ -1,5 +1,21 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "For updates please check https://erethon.com and https://github.com/erethon
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Plugins and Vundle
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-surround'
+
+call vundle#end()
+filetype plugin indent on
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Visual stuff
@@ -17,11 +33,11 @@ set softtabstop=4
 set shiftwidth=4
 
 "Remove trailing whitespace for .py/.yml/.init/.rst/.spec files
-autocmd BufWritePre *.py :%s/\s\+$//e                                           
-autocmd BufWritePre *.yml :%s/\s\+$//e                                          
-autocmd BufWritePre *.init :%s/\s\+$//e                                         
-autocmd BufWritePre *.rst %s/\s\+$//e                                           
-autocmd BufWritePre *.spec %s/\s\+$//e   
+autocmd BufWritePre *.py :%s/\s\+$//e
+autocmd BufWritePre *.yml :%s/\s\+$//e
+autocmd BufWritePre *.init :%s/\s\+$//e
+autocmd BufWritePre *.rst %s/\s\+$//e
+autocmd BufWritePre *.spec %s/\s\+$//e
 autocmd BufWritePre *.conf %s/\s\+$//e
 
 "Show line numbers
@@ -51,15 +67,14 @@ else
   au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
 
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Mapping stuff
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"Mapping 0 to go to first non-blank character of line
-map 0 ^
-
 "Map <leader> to ";"
 let mapleader = ";"
+
+"Mapping 0 to go to first non-blank character of line
+map 0 ^
 
 "Use Ctrl + t for opening a new tab
 nnoremap <c-t> :tabnew
@@ -76,30 +91,17 @@ imap ii <Esc>
 "Pep8 checking
 map <F5> :!pep8 % <Enter>
 
-"Git blame                                                                      
-map <F6> :!git blame % <Enter>                                                  
-                                                                                
-"Check number of characters in file                                             
-map <F4> :!wc -m %<CR>                                                          
-                                                                                
-"Easy set paste and set nopaste                                                 
-set pastetoggle=<F2>                                                            
-                                                                                
-"Spell checking                                                                 
-map <F7> :set spell<CR> 
+"Git blame
+map <F6> :!git blame % <Enter>
+
+"Check number of characters in file
+map <F4> :!wc -m %<CR>
+
+"Easy set paste and set nopaste
+set pastetoggle=<F2>
+
+"Spell checking
+map <F7> :set spell<CR>
 
 "Enable mouse in vim
 set mouse=a
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"Random Stuff
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-"Enable pathogen add ons
-"execute pathogen#infect()
-
-"Start CtrlP                                                                    
-"set runtimepath^=~/.vim/bundle/ctrlp.vim
-
-filetype indent plugin on
-filetype indent on
