@@ -62,3 +62,6 @@ hi TabLineFill ctermfg=46   ctermbg=NONE  cterm=NONE
 
 " End of Colour scheme ! (Pretty small !:) )
 " Will add support for more languages eventually. !
+
+hi CursorLine               ctermbg=235   cterm=none
+hi CursorLineNr ctermfg=208               cterm=none

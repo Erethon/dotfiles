@@ -99,9 +99,14 @@ map <F4> :!wc -m %<CR>
 
 "Easy set paste and set nopaste
 set pastetoggle=<F2>
-
 "Spell checking
 map <F7> :set spell<CR>
 
 "Enable mouse in vim
 set mouse=a
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set nomodeline
+set cursorline
