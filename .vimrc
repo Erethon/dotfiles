@@ -1,4 +1,4 @@
-"For updates please check https://ererthon.com and https://github.com/erethon
+"For updates please check https://erethon.com and https://github.com/erethon
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
