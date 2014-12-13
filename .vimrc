@@ -13,6 +13,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 "Plugin 'kien/ctrlp.vim'
 "Plugin 'scrooloose/nerdcommenter'
 "Plugin 'tpope/vim-surround'
+"Plugin 'tpope/vim-fugitive'
 
 "call vundle#end()
 filetype plugin indent on
