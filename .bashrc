@@ -116,6 +116,9 @@ if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
+# Needed for virtualenvwrapper
+export WORKON_HOME=~/venvs
+source /usr/local/bin/virtualenvwrapper.sh
 
 ####Adding stuff to path####
 PATH=$PATH:/sbin/
