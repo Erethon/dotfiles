@@ -1,0 +1,13 @@
+set jid = xxx@xxx.xx
+
+set server = xxx.xxx.xx
+
+set tls = 1
+
+set spell_enable = 0
+
+bind 521 = buffer up
+bind 514 = buffer down
+
+set otr = 1
+otrpolicy default manual
