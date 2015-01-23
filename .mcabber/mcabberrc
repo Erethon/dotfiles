@@ -6,8 +6,14 @@ set tls = 1
 
 set spell_enable = 0
 
+# Ctrl-Up/Ctrl-Down buffer up/down
 bind 521 = buffer up
 bind 514 = buffer down
 
 set otr = 1
 otrpolicy default manual
+
+# Aliases
+alias leave = room leave
+alias join = room join
+alias names = room names
