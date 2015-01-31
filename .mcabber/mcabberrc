@@ -15,5 +15,9 @@ otrpolicy default manual
 
 # Aliases
 alias leave = room leave
+alias wc = room leave
 alias join = room join
+alias j = room join
 alias names = room names
+alias rs = roster search
+alias rt = roster toggle
