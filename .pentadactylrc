@@ -1,0 +1,12 @@
+" Use homerow keys for hints (except ';')
+set hintkeys=asdfglkjh
+
+" Incremental search
+set incfind
+
+" Highlight searches
+set hlfind
+
+" Use h/l to go to previous/next tab
+map -builtin h <C-p>
+map -builtin l <C-n>
