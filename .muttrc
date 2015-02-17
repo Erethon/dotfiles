@@ -23,11 +23,12 @@ set edit_headers = yes
 bind index G    last-entry
 bind index j    next-entry
 bind index k    previous-entry
-bind index Q    next-unread
+bind index u    next-unread
+bind index i    read-thread
 
-bind index,pager \CP sidebar-prev
-bind index,pager \CN sidebar-next
-bind index,pager \CO sidebar-open
+bind index,pager K sidebar-prev
+bind index,pager J sidebar-next
+bind index,pager O sidebar-open
 
 color normal    white black
 color attachment brightyellow black
