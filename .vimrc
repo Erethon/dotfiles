@@ -103,8 +103,17 @@ set pastetoggle=<F2>
 "Spell checking
 map <F7> :set spell<CR>
 
-"Enable mouse in vim
-set mouse=a
+" Set options to comply with the linux kernel coding style
+function Kernel()
+    set noexpandtab
+    set tabstop=8
+    set softtabstop=8
+    set shiftwidth=8
+    set cinoptions=:0,l1,t0,g0,(0
+endfunction
+
+"Go in kernel mode coding style
+map <F8> :call Kernel() <Enter>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Settings
@@ -116,3 +125,6 @@ set cursorline
 set langmap=ΑA,ΒB,ΨC,ΔD,ΕE,ΦF,ΓG,ΗH,ΙI,ΞJ,ΚK,ΛL,ΜM,ΝN,ΟO,ΠP,QQ,ΡR
 set langmap+=ΣS,ΤT,ΘU,ΩV,WW,ΧX,ΥY,ΖZ,αa,βb,ψc,δd,εe,φf,γg,ηh,ιi,ξj
 set langmap+=κk,λl,μm,νn,οo,πp,qq,ρr,σs,τt,θu,ωv,ςw,χx,υy,ζz
+
+"Enable mouse in vim
+set mouse=a
