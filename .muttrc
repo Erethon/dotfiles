@@ -4,12 +4,12 @@ set imap_user   = XXXXX
 set from        = XXXXX
 set use_from    = yes
 
-# Folder/Url settings
-set folder      = imaps://url.com:993
+# Using offlineimap for this
+set folder=~/mail/
+set mbox_type=Maildir
+source ~/.mutt/mailboxes
+
 set smtp_url    = smtp://username@smtps.url.gr:587
-set spoolfile   = +INBOX
-mailboxes       =INBOX
-set record      = +sent
 
 set ssl_starttls = yes
 set ssl_force_tls = yes
