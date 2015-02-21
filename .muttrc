@@ -10,6 +10,7 @@ set mbox_type=Maildir
 source ~/.mutt/mailboxes
 
 set smtp_url    = smtp://username@smtps.url.gr:587
+set record      = +sent
 
 set ssl_starttls = yes
 set ssl_force_tls = yes
