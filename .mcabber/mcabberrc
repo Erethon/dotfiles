@@ -10,6 +10,10 @@ set spell_enable = 0
 bind 521 = buffer up
 bind 514 = buffer down
 
+# Use Ctrl-j/Ctrl-k for roster down/up
+bind 10 = roster down
+bind 11 = roster up
+
 set otr = 1
 otrpolicy default manual
 
