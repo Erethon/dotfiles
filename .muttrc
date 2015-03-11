@@ -1,6 +1,5 @@
 # Username/from
 set realname    = "Dionysis Grigoropoulos"
-set imap_user   = XXXXX
 set from        = XXXXX
 set use_from    = yes
 
@@ -19,6 +18,15 @@ set ssl_force_tls = yes
 set mail_check  = 240
 set editor = vim
 set edit_headers = yes
+
+# Ask for cc list before opening editor
+set askcc = yes
+
+# Alias stuff
+set alias_file = "~/.mutt/aliases"
+set sort_alias = address
+set reverse_alias = yes
+source $alias_file
 
 # Keybinds
 bind index G    last-entry
