@@ -18,6 +18,8 @@ set ssl_force_tls = yes
 set mail_check  = 240
 set editor = vim
 set edit_headers = yes
+# Instantly change mailboxes (informational messages will be lost this way)
+set sleep_time = 0
 
 # Ask for cc list before opening editor
 set askcc = yes
