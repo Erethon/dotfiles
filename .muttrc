@@ -54,3 +54,6 @@ color tree  red black
 
 color index red black ~D
 color index magenta black ~T
+
+macro index / "<enter-command>unset wait_key<enter><shell-escape>python-notmuch.py<enter><change-folder-readonly>~/.cache/mutt_results<enter>" \
+        "search mail (using notmuch)"
