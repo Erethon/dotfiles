@@ -30,6 +30,13 @@ set sort_alias = address
 set reverse_alias = yes
 source $alias_file
 
+# PGP/GPG stuff
+set pgp_replyencrypt
+set pgp_replysign
+set pgp_replysignencrypted
+set pgp_show_unusable=no
+set pgp_sign_as = 0xAB80AB27FB93181A
+
 # Keybinds
 bind index G    last-entry
 bind index j    next-entry
@@ -55,5 +62,5 @@ color tree  red black
 color index red black ~D
 color index magenta black ~T
 
-macro index / "<enter-command>unset wait_key<enter><shell-escape>python-notmuch.py<enter><change-folder-readonly>~/.cache/mutt_results<enter>" \
-        "search mail (using notmuch)"
+macro index / "<enter-command>unset wait_key<enter><shell-escape>python-notmuch.py<enter><change-folder-readonly>~/.cache/mutt_results<enter>"
+macro index I "<enter-command>unset wait_key<enter><pipe-message>notmuch-mutt thread<enter><change-folder-readonly>~/.cache/notmuch/mutt/results<enter>"
