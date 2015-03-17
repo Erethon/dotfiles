@@ -21,6 +21,9 @@ set edit_headers = yes
 # Instantly change mailboxes (informational messages will be lost this way)
 set sleep_time = 0
 
+# Set index format, for info see `man muttrc'
+set index_format="%4C %Z %X %[%b %d %H:%M] %-22.22L - %s"
+
 # Ask for cc list before opening editor
 set askcc = yes
 
@@ -48,19 +51,23 @@ bind index,pager K sidebar-prev
 bind index,pager J sidebar-next
 bind index,pager O sidebar-open
 
-color normal    white black
-color attachment brightyellow black
-color hdrdefault cyan black
+# Theme/Colors
+color normal    default default
+color attachment brightyellow default
+color hdrdefault cyan default
 color indicator black cyan
-color markers   brightred black
-color quoted    green black
-color signature cyan black
-color status    brightgreen blue
-color tilde blue black
-color tree  red black
+color markers   brightred white
+color quoted    green default
+color signature cyan default
+color status    brightred default
+color tilde blue default
+color tree  red default
 
-color index red black ~D
-color index magenta black ~T
+color index red default ~D
+color index magenta default ~T
+color tree  magenta default
+
+color sidebar_new brightcyan default
 
 macro index / "<enter-command>unset wait_key<enter><shell-escape>python-notmuch.py<enter><change-folder-readonly>~/.cache/mutt_results<enter>"
 macro index I "<enter-command>unset wait_key<enter><pipe-message>notmuch-mutt thread<enter><change-folder-readonly>~/.cache/notmuch/mutt/results<enter>"
