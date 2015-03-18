@@ -58,10 +58,12 @@ color hdrdefault cyan default
 color indicator black cyan
 color markers   brightred white
 color quoted    green default
+color quoted2   magenta default
+color quoted3   brightred default
+color quoted4   cyan default
 color signature cyan default
 color status    brightred default
 color tilde blue default
-color tree  red default
 
 color index red default ~D
 color index magenta default ~T
