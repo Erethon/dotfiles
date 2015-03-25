@@ -43,10 +43,19 @@ servedir(){
 }
 
 shutd(){
-    echo  $((date| cut -d' ' -f 1-5 && uptime | cut -d' ' -f 3-5 | cut -d',' -f 1 ) | tr "\n" " ")  >> /home/dion/.uptime.txt
+    echo  $((date| cut -d' ' -f 1-5 && uptime | cut -d' ' -f 3-5 | cut -d',' -f 1 ) | tr "\n" " ")  >> ~/.uptime.txt
     sudo shutdown -h now
 }
 
+wifi(){
+    sudo rfkill unblock wifi
+    sleep 1
+    sudo ifconfig wlan0 down
+    sudo macchanger -r wlan0
+    sudo ifconfig wlan0 up
+    sudo service wicd start
+    wicd-curses
+}
 
 #Clear terminal
 alias c="clear"
