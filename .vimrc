@@ -62,8 +62,8 @@ colorscheme pychimp
 
 "Show a blue vertical line on the 80th character (pep8 compliant)
 if exists('+colorcolumn')
-  set colorcolumn=80
   highlight ColorColumn ctermbg=23
+  call matchadd('ColorColumn', '\%80v', 100)
 else
   au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
