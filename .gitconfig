@@ -24,8 +24,13 @@
     nv = commit --no-verify
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset by %C(yellow)%ae%Creset' --abbrev-commit --date=relative
     lgg = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset by %C(yellow)%ae%Creset' --abbrev-commit --date=relative
+
 [init]
     templatedir = ~/.config/git_templates/
-[url "https://github.com"]
-    insteadOf = http://github.com
-    insteadOf = git://github.com
+
+[sendemail]
+    smtpencryption = tls
+    smtpserver = mail.erethon.com
+    smtpuser = XXX
+    smtpserverport = 587
+    suppresscc = self
