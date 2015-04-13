@@ -1,5 +1,4 @@
 [core]
-    mergeoptions = --no-ff --no-commit
     editor = vim
 
 [user]
@@ -11,7 +10,7 @@
     commit = false
 
 [color]
-    ui = true   
+    ui = true
 
 [alias]
     co = checkout
@@ -33,4 +32,3 @@
     smtpserver = mail.erethon.com
     smtpuser = XXX
     smtpserverport = 587
-    suppresscc = self
