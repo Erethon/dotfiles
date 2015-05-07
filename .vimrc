@@ -112,9 +112,19 @@ function Kernel()
     set cinoptions=:0,l1,t0,g0,(0
 endfunction
 
+" Set options JS and PHP coding style
+function JSphp()
+    set expandtab
+    set tabstop=4
+    set softtabstop=4
+    set shiftwidth=4
+endfunction
+
 "Go in kernel mode coding style
 map <F8> :call Kernel() <Enter>
 
+"Go in js/php mode coding style
+map <F9> :call JSphp() <Enter>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
