@@ -1,4 +1,4 @@
-*background: #1C1C1C
+*background: #101010
 *foreground: #c0c0c0
 *cursorColor: #93a1a1
 URxvt.scrollBar: false
