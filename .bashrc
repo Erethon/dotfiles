@@ -118,7 +118,7 @@ fi
 
 # Needed for virtualenvwrapper
 export WORKON_HOME=~/venvs
-source /usr/local/bin/virtualenvwrapper.sh
+# source /usr/local/bin/virtualenvwrapper.sh
 
 ####Adding stuff to path####
 PATH=$PATH:/sbin/
