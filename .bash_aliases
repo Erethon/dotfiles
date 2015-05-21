@@ -70,9 +70,6 @@ alias les="less"
 #Open stdout in vim 
 alias vr="| vim -R -"
 
-#Start networking for VMs
-alias vms="sudo virsh net-start default"
-
 #Pretty print json
 alias json="python -mjson.tool"
 
