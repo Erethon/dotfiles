@@ -13,3 +13,6 @@ set defsearch=duckduckgo
 " Use h/l to go to previous/next tab
 map -builtin h <C-p>
 map -builtin l <C-n>
+
+" Use vim as my editor
+set editor='rxvt -e "vim" <file>'
