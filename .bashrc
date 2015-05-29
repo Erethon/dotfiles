@@ -116,7 +116,7 @@ else
     prompt_color="\[\033[32m\]"
 fi
 
-export PS1=$prompt_color"\u@\h\[\033[00m\]:\[\033[01;32m\]\w\[\033[00m\]\[\033[36m\]$(parse_git_branch)\[\033[00m\]\$ "
+export PS1=$prompt_color'\u@\h\[\033[00m\]:\[\033[01;32m\]\w\[\033[00m\]\[\033[36m\]$(parse_git_branch)\[\033[00m\]\$ '
 
 if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
