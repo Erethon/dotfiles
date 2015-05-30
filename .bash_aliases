@@ -88,3 +88,4 @@ alias g="git"
 alias v="vim"
 alias h="history | grep"
 alias less="less -R" #Enable color parsing by default
+alias iptv="iptables -L -v -n --line-numbers"
