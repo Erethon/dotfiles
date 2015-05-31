@@ -1,14 +1,15 @@
 # Username/from
 set realname    = "Dionysis Grigoropoulos"
-set from        = XXXXX
+set from        = "dgrig@erethon.com"
 set use_from    = yes
+set envelope_from = yes
+set sendmail = "/usr/bin/msmtp"
 
 # Using offlineimap for this
 set folder=~/mail/
 set mbox_type=Maildir
 source ~/.mutt/mailboxes
 
-set smtp_url    = smtp://username@smtps.url.gr:587
 set record      = +sent
 
 set ssl_starttls = yes
@@ -38,7 +39,7 @@ set pgp_replyencrypt
 set pgp_replysign
 set pgp_replysignencrypted
 set pgp_show_unusable=no
-set pgp_sign_as = 0xAB80AB27FB93181A
+set pgp_sign_as = 0x50B00433B8BA2B28
 
 # Keybinds
 bind index G    last-entry
