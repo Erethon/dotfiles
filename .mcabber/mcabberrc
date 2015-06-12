@@ -14,6 +14,25 @@ bind 514 = buffer down
 bind 10 = roster down
 bind 11 = roster up
 
+# Use 'F2' to show/hide offline contacts
+bind 266 = roster toggle_offline 
+
+# Use 'F3' to show/hide the roster
+bind 267 = roster toggle
+
+# Use Ctrl-x to go to netxt unread msg
+bind 24 = roster unread_next
+
+# Logging settings
+set logging = 1
+set log_muc_conf = 1
+
+# Don't show OS version
+set iq_version_hide_os = 1
+
+# Hide joins/leaves
+set muc_flag_joins = 0
+
 set otr = 1
 otrpolicy default manual
 
