@@ -1,0 +1,15 @@
+# Save dir
+directory = ~/Torrents
+
+# Must be unique, do not run two rtorrent instances with the same session
+session = ~/Torrents/rtorrent.session
+
+# Logging
+execute_log = ~/Torrents/rtorrent.log
+
+# Use UDP trackers
+use_udp_trackers = yes
+
+# Download/Upload rate in KiB
+download_rate = 0
+upload_rate = 20
