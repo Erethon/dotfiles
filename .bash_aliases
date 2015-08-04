@@ -57,6 +57,11 @@ wifi(){
     wicd-curses
 }
 
+coent(){
+PID=$(docker inspect --format {{.State.Pid}} $1)
+sudo nsenter --target $PID --mount --uts --ipc --net --pid
+}
+
 #Clear terminal
 alias c="clear"
 
