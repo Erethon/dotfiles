@@ -138,3 +138,6 @@ set langmap+=κk,λl,μm,νn,οo,πp,qq,ρr,σs,τt,θu,ωv,ςw,χx,υy,ζz
 
 "Enable mouse in vim
 set mouse=a
+
+"Set spell checking languages
+set spelllang=en,el
