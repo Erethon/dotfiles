@@ -136,3 +136,5 @@ export PATH
 export MANPAGER="/bin/sh -c \"col -b | vim -c 'set ft=man ts=8 nomod nolist nonu noma' -c 'map q ZZ' -\""
 
 export GPG_TTY=$(tty)
+
+set -o vi
