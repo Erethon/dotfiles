@@ -2,6 +2,7 @@
 *foreground: #c0c0c0
 *cursorColor: #93a1a1
 URxvt.scrollBar: false
+URxvt.perl-ext-common: confirm-paste
 
 !! black dark/light
 !*color0: #121212
