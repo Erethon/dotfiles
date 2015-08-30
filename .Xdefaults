@@ -4,6 +4,7 @@
 URxvt.scrollBar: false
 URxvt.perl-ext-common: confirm-paste
 URxvt.boldFont:
+URxvt.font: xft:Terminus:style=medium:pixelsize=14:antialias=true:hinting=full
 
 !! black dark/light
 !*color0: #121212
