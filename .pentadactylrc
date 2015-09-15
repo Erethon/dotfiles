@@ -7,8 +7,8 @@ set incfind
 " Highlight searches
 set hlfind
 
-" Set duckduckgo as the default search engine
-set defsearch=duckduckgo
+" Set google as the default search engine
+set defsearch=google
 
 " Use h/l to go to previous/next tab
 map -builtin h <C-p>
