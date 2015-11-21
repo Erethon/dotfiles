@@ -33,3 +33,5 @@
     smtpserver = mail.erethon.com
     smtpuser = XXX
     smtpserverport = 587
+[rerere]
+    enabled = true
