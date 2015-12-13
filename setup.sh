@@ -11,3 +11,5 @@ cp .bash_aliases ~
 cp .config/ls_col ~/.config
 cp .vim/colors/* ~/.vim/colors
 cp .Xdefaults ~/.Xdefaults
+cp .aliases ~/.aliases
+cp .zshrc ~/.zshrc
