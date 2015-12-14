@@ -20,8 +20,11 @@ GIT_PROMPT_EXECUTABLE="haskell" # Use haskell for git prompt
 PROMPT='%{%(#~$fg[magenta]~$fg[green])%}%~%b$(git_super_status) %# '
 
 # Source aliases
-[ -f .aliases ] && source .aliases
-[ -f .config/ls_col ] && source .config/ls_col
+[ -f ~/.aliases ] && source ~/.aliases
+[ -f ~/.config/ls_col ] && source ~/.config/ls_col
 
 # Vars
 export GPG_TTY=$(tty)
+
+# Completions
+zstyle ':completion:*:kill:*' command 'ps -e -o pid,%cpu,cmd'
