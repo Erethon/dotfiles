@@ -73,6 +73,8 @@ alias json="python -mjson.tool"
 alias h="history | grep"
 alias less="less -R"
 alias ls="ls --color=auto"
+alias l="ls"
+alias cl="clear; ls"
 
 alias iptv="iptables -L -v -n --line-numbers"
 alias iptvs="ip6tables -L -v -n --line-numbers"
