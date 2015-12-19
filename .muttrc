@@ -36,9 +36,8 @@ source $alias_file
 
 # PGP/GPG stuff
 set pgp_replyencrypt
-set pgp_replysign
-set pgp_replysignencrypted
-set pgp_show_unusable=no
+set pgp_show_unusable = no
+set pgp_use_gpg_agent = yes
 
 # Keybinds
 bind index G    last-entry
