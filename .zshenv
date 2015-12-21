@@ -1,2 +1,2 @@
 typeset -U path
-path=(/sbin ~/bin $path[@])
+path=(/usr/sbin /sbin ~/bin $path[@])
