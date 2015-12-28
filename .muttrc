@@ -6,8 +6,9 @@ set envelope_from = yes
 set sendmail = "/usr/bin/msmtp"
 
 # Using offlineimap for this
-set folder=~/mail/
-set mbox_type=Maildir
+set folder = ~/mail/
+set postponed = $folder/postponed
+set mbox_type = Maildir
 source ~/.mutt/mailboxes
 
 set record      = +sent
