@@ -28,3 +28,7 @@ export GPG_TTY=$(tty)
 
 # Completions
 zstyle ':completion:*:kill:*' command 'ps -e -o pid,%cpu,cmd'
+
+# Virtualenv wrapper
+#export WORKON_HOME=~/venvs
+#source /usr/local/bin/virtualenvwrapper.sh
