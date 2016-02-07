@@ -5,6 +5,10 @@ set use_from    = yes
 set envelope_from = yes
 set sendmail = "/usr/bin/msmtp"
 
+# Automatically use alternate email address
+set reverse_name = yes
+alternates "dgrig@pollfish.com"
+
 # Using offlineimap for this
 set folder = ~/mail/
 set postponed = $folder/postponed
@@ -71,5 +75,6 @@ color tree  magenta default
 
 color sidebar_new magenta default
 
+# NotMuch Macros
 macro index / "<enter-command>unset wait_key<enter><shell-escape>python-notmuch.py<enter><change-folder-readonly>~/.cache/mutt_results<enter>"
 macro index I "<enter-command>unset wait_key<enter><pipe-message>notmuch-mutt thread<enter><change-folder-readonly>~/.cache/notmuch/mutt/results<enter>"
