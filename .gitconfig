@@ -25,9 +25,6 @@
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset by %C(yellow)%ae%Creset' --abbrev-commit --date=relative
     lgg = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset by %C(yellow)%ae%Creset' --abbrev-commit --date=relative
 
-[init]
-    templatedir = ~/.config/git_templates/
-
 [sendemail]
     smtpencryption = tls
     smtpserver = mail.erethon.com
