@@ -15,9 +15,10 @@ bindkey "^R" history-incremental-search-backward
 
 # Prompt style
 prompt off
-source ~/Code/zsh-git-prompt/zshrc.sh # Enable git prompt
-GIT_PROMPT_EXECUTABLE="haskell" # Use haskell for git prompt
-PROMPT='%{%(#~$fg[magenta]~$fg[green])%}%~%b$(git_super_status) %# '
+#source ~/Code/zsh-git-prompt/zshrc.sh # Enable git prompt
+#GIT_PROMPT_EXECUTABLE="haskell" # Use haskell for git prompt
+#PROMPT='%{%(#~$fg[magenta]~$fg[green])%}%~%b$(git_super_status) %# '
+PROMPT='%{%(#~$fg[magenta]~$fg[green])%}%~%b %# '
 
 # Source aliases
 [ -f ~/.aliases ] && source ~/.aliases
