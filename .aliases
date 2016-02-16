@@ -57,7 +57,7 @@ alias c="clear"
 
 alias clip="xclip -selection clipboard"
 alias burn="shred -n 3 -u "
-alias monitor="xrandr --output DVI-I-1 --mode 1920x1080 --left-of VGA1"
+alias monitor="xrandr --output HDMI1 --mode 1920x1200 --left-of eDP1"
 alias monitor2="xrandr --output LVDS1 --mode 1024x600; xrandr --output VGA1 --mode 1920x1080 --left-of LVDS1"
 
 #Common typo
@@ -79,3 +79,9 @@ alias cl="clear; ls"
 
 alias iptv="iptables -L -v -n --line-numbers"
 alias iptvs="ip6tables -L -v -n --line-numbers"
+
+alias alsamixer="alsamixer -c 0"
+
+cse() {
+    grep -ir $1 ~/.mcabber/histo/ | sed -e 's/.*000 //'
+}
