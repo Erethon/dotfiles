@@ -33,3 +33,8 @@ zstyle ':completion:*:kill:*' command 'ps -e -o pid,%cpu,cmd'
 # Virtualenv wrapper
 #export WORKON_HOME=~/venvs
 #source /usr/local/bin/virtualenvwrapper.sh
+
+# Fish style history
+# source ~/Code/dotstuff/zsh-history-substring-search/zsh-history-substring-search.zsh
+# bindkey -M vicmd 'k' history-substring-search-up
+# bindkey -M vicmd 'j' history-substring-search-down
