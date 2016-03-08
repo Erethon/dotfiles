@@ -85,3 +85,10 @@ alias alsamixer="alsamixer -c 0"
 cse() {
     grep -ir $1 ~/.mcabber/histo/ | sed -e 's/.*000 //'
 }
+
+#Unlock remote luks machines
+unluks() {
+    read -s LUKSPASS
+    ssh -l root $1 "echo -ne $LUKSPASS >/lib/cryptsetup/passfifo"
+    unset LUKSPASS
+}
