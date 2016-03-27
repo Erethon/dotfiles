@@ -13,6 +13,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 "Plugin 'kien/ctrlp.vim'
 "Plugin 'scrooloose/nerdcommenter'
 "Plugin 'tpope/vim-surround'
+"Plugin 'vimwiki/vimwiki'
 
 "call vundle#end()
 filetype plugin indent on
@@ -140,3 +141,8 @@ set mouse=a
 
 "Set spell checking languages
 set spelllang=en,el
+
+let g:vimwiki_list = [{'path': '~/Documents/wiki/',
+                      \'path_html': '~/Documents/wiki_html',
+                      \'syntax': 'markdown', 'ext': '.md'}]
+
