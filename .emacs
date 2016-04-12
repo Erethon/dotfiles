@@ -27,6 +27,14 @@
 ;; Org-mode bindings
 (define-key evil-normal-state-map "t" 'org-todo)
 (define-key evil-normal-state-map (kbd "TAB") 'org-cycle)
+(load-file "~/.emacs.d/vim-agenda.el")
+
+;; Org-mode settings
+(setq org-agenda-files (list "~/Documents/org/index.org"
+			     "~/Documents/org/personal.org"
+			     "~/Documents/org/work.org"))
+
+;;(setq org-agenda-window-setup (quote current-window))
 
 (evil-leader/set-key-for-mode 'org-mode
   "n" 'org-next-link
