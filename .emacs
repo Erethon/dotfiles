@@ -47,3 +47,10 @@
 
 ;; Prompt for y/no instead of yes/no
 (fset 'yes-or-no-p 'y-or-n-p)
+
+;; Enable org-babel for sh and python
+(org-babel-do-load-languages
+  'org-babel-load-languages
+  '((sh . t)
+    (python . t)
+   ))
