@@ -40,7 +40,8 @@
   "n" 'org-next-link
   "N" 'org-previous-link
   "a" 'org-agenda
-  "t" 'org-show-todo-tree)
+  "t" 'org-show-todo-tree
+  "A" 'org-archive-subtree-default)
 
 (global-evil-leader-mode)
 (evil-leader/set-leader ";")
@@ -54,3 +55,6 @@
   '((sh . t)
     (python . t)
    ))
+
+;; General settings
+(add-hook 'before-save-hook 'delete-trailing-whitespace)

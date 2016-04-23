@@ -76,7 +76,7 @@ alias ls="ls --color=auto"
 alias l="ls"
 alias ll="ls -lah"
 alias cl="clear; ls"
-alias e="emacs -nw"
+alias e="emacsclient"
 
 alias iptv="iptables -L -v -n --line-numbers"
 alias iptvs="ip6tables -L -v -n --line-numbers"
