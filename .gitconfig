@@ -14,14 +14,12 @@
 
 [alias]
     co = checkout
-    st = status
-    go = log --graph --pretty=oneline --abbrev-commit
-    lp = log --pretty=oneline
     b = branch
     ba = branch -a
     bl = blame
     fa = fetch --all
     nv = commit --no-verify
+    ls = log --show-signature
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset by %C(yellow)%ae%Creset' --abbrev-commit --date=relative
     lgg = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset by %C(yellow)%ae%Creset' --abbrev-commit --date=relative
 
