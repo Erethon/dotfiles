@@ -44,3 +44,7 @@ alias j = room join
 alias names = room names
 alias rs = roster search
 alias rt = roster toggle
+
+# Notifications
+set events_command = ~/.mcabber/event.sh
+set events_ignore_active_window = 0
