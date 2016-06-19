@@ -19,6 +19,8 @@ https://www.reddit.com/r/onions/.rss Tech
 
 http://lowendtalk.com/discussions/feed.rss Cloud
 
+https://feeds.feedburner.com/BsdNowOgg BSD
+
 http://feeds.feedburner.com/RyanLanesBlog DevOps
 https://www.reddit.com/r/ansible/.rss DevOps
 https://www.reddit.com/r/devops/.rss DevOps
@@ -32,8 +34,6 @@ https://www.reddit.com/r/python/.rss Development
 https://www.reddit.com/r/flask/.rss Development
 https://www.reddit.com/r/node/.rss Development
 
-https://www.reddit.com/r/eve/.rss Gaming
-
 http://www.devttys0.com/feed/ Security
 http://buffered.io/atom.xml Security
 https://www.reddit.com/r/netsec/.rss Security
@@ -44,8 +44,6 @@ https://blog.hboeck.de/feeds/index.rss2 Security
 
 https://github.com/grnet/synnefo/commits/develop.atom GitHub feeds
 https://github.com/ansible/ansible/commits/devel.atom Github feeds
-
-http://pipes.yahoo.com/pipes/pipe.run?_id=02bfefe73ba14054570ce82f1929e433&_render=rss&owner=grnet&repo=synnefo
 
 https://www.reddit.com/r/gardening/.rss Gardening
 https://www.reddit.com/r/foraging/.rss Gardening
