@@ -72,7 +72,6 @@ alias json="python -mjson.tool"
 #Common programs alias
 alias h="fc -l -10000 | grep"
 alias less="less -R"
-alias ls="ls --color=auto"
 alias l="ls"
 alias ll="ls -lah"
 alias cl="clear; ls"

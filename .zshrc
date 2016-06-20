@@ -22,6 +22,7 @@ PROMPT="%{%(#~$fg[magenta]~$fg[green])%}%m %~%b %# "
 
 # Source aliases
 [ -f ~/.aliases ] && source ~/.aliases
+[ -f ~/.bsd_profile ] && source ~/.bsd_profile
 [ -f ~/.config/ls_col ] && source ~/.config/ls_col
 
 # Vars

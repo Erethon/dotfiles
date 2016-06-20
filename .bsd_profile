@@ -1,4 +1,3 @@
 alias ls='/usr/local/bin/colorls -G'
 
 export LSCOLORS='cxfxcxdxfxegedabagacad'
-export PKG_PATH=ftp://ftp.eu.openbsd.org/pub/OpenBSD/`uname -r`/packages/`uname -m`/
