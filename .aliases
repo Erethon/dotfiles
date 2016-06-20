@@ -39,7 +39,7 @@ servedir(){
 
 shutd(){
     echo  $((date| cut -d' ' -f 1-5 && uptime | cut -d' ' -f 3-5 | cut -d',' -f 1 ) | tr "\n" " ")  >> ~/.uptime.txt
-    sudo shutdown -h now
+    sudo shutdown -p now
 }
 
 wifi(){
