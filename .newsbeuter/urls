@@ -10,17 +10,22 @@ https://www.reddit.com/r/DHExchange/.rss DataHoarding
 https://www.reddit.com/r/rtlsdr/.rss Radio
 http://www.windytan.com/feeds/posts/default Radio
 
-http://feeds2.feedburner.com/hackaday/LgoM Tech
-http://www.bunniestudios.com/blog/?feed=rss2 Tech
-http://rss.slashdot.org/Slashdot/slashdot Tech
-http://xobs.io/rss/ Tech
-https://www.reddit.com/r/bitcoin/.rss Tech
-https://www.reddit.com/r/onions/.rss Tech
+http://feeds2.feedburner.com/hackaday/LgoM General
+http://www.bunniestudios.com/blog/?feed=rss2 General
+http://rss.slashdot.org/Slashdot/slashdot General
+http://xobs.io/rss/ General
+https://www.reddit.com/r/bitcoin/.rss General
+https://www.reddit.com/r/onions/.rss General
+http://codingquark.com/feed.xml General
 
 http://lowendtalk.com/discussions/feed.rss Cloud
 
 https://feeds.feedburner.com/BsdNowOgg BSD
 https://bsdly.blogspot.com/feeds/posts/default?alt=rss BSD
+https://www.geeklan.co.uk/?feed=rss2 BSD
+
+https://blog.patternsinthevoid.net/feeds/all.atom.xml Privacy
+https://diracdeltas.github.io/blog/index.xml Privacy
 
 http://feeds.feedburner.com/RyanLanesBlog DevOps
 https://www.reddit.com/r/ansible/.rss DevOps
