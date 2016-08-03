@@ -20,6 +20,10 @@
 (require 'org)
 (setq org-log-done t)
 
+;; Org-Journal settings
+(setq org-journal-dir "~/Documents/org/journal")
+(load-file "~/.emacs.d/org-journal.el")
+
 ;; Adds a vim-like <leader> key
 (add-to-list 'load-path "~/.emacs.d/plugins/evil-leader")
 (require 'evil-leader)
@@ -54,6 +58,7 @@
   'org-babel-load-languages
   '((sh . t)
     (python . t)
+    (dot . t)
    ))
 
 ;; General settings
