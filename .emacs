@@ -14,7 +14,7 @@
 (define-key evil-normal-state-map (kbd "C-j") 'evil-window-down)
 (define-key evil-normal-state-map (kbd "C-k") 'evil-window-up)
 (define-key evil-normal-state-map (kbd "SPC") 'scroll-up-command)
-
+(define-key evil-normal-state-map (kbd "0") 'back-to-indentation)
 
 (setq org-return-follows-link t)
 (require 'org)
