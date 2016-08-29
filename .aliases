@@ -1,4 +1,4 @@
-# go back x directories
+#  go back x directories
 b() {
     str=""
     count=0
@@ -10,7 +10,7 @@ b() {
     cd $str
 }
 
-#Extract almost any archive
+# Extract almost any archive
 extract () {
     if [ -f $1 ] ; then
       case $1 in
@@ -32,7 +32,7 @@ extract () {
      fi
 }
 
-#Instant server
+# Instant server
 servedir(){
     python -m SimpleHTTPServer $1
 }
@@ -52,7 +52,7 @@ wifi(){
     wicd-curses
 }
 
-#Clear terminal
+# Clear terminal
 alias c="clear"
 
 alias clip="xclip -selection clipboard"
@@ -60,16 +60,16 @@ alias burn="shred -n 3 -u "
 alias monitor="xrandr --output HDMI1 --mode 1920x1200 --left-of eDP1"
 alias monitor2="xrandr --output LVDS1 --mode 1024x600; xrandr --output VGA1 --mode 1920x1080 --left-of LVDS1"
 
-#Common typo
+# Common typo
 alias les="less"
 
-#Open stdout in vim 
+# Open stdout in vim
 alias vr="vim -R -"
 
-#Pretty print json
+# Pretty print json
 alias json="python -mjson.tool"
 
-#Common programs alias
+# Common programs alias
 alias h="fc -l -10000 | grep"
 alias less="less -R"
 alias ls="ls --color=auto"
@@ -87,9 +87,14 @@ cse() {
     grep -ir $1 ~/.mcabber/histo/ | sed -e 's/.*000 //'
 }
 
-#Unlock remote luks machines
+# Unlock remote luks machines
 unluks() {
     read -s LUKSPASS
     ssh -l root $1 "echo -ne $LUKSPASS >/lib/cryptsetup/passfifo"
     unset LUKSPASS
 }
+
+# Archive emails
+archive() {
+    DEST=$(dirname ~/Vault/$1)
+    archivemail -d 30 -o $DEST $1
