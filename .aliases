@@ -96,5 +96,6 @@ unluks() {
 
 # Archive emails
 archive() {
-    DEST=$(dirname ~/Vault/$1)
+    DEST=$(dirname ~/Vault/mail/$1)
     archivemail -d 30 -o $DEST $1
+}
