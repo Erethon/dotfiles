@@ -62,3 +62,9 @@
 
 ;; General settings
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+;; Use /tmp for temp and backup files
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
