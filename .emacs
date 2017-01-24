@@ -68,3 +68,6 @@
       `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
+
+;; (add-to-list 'custom-theme-load-path "~/Code/emacs/monokai-emacs")
+;; (load-theme 'monokai t)
