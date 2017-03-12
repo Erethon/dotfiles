@@ -1,0 +1,124 @@
+* Appearance
+** Hide the menu bar on top
+
+#+BEGIN_SRC emacs-lisp
+  (menu-bar-mode -1)
+#+END_SRC
+
+** Set theme directory and use monokai
+
+#+BEGIN_SRC emacs-lisp
+  (add-to-list 'custom-theme-load-path "~/Code/emacs/monokai-emacs")
+  (load-theme 'monokai t)
+#+END_SRC
+
+** Use pretty icon for org-ellipsis
+#+BEGIN_SRC emacs-lisp
+  (setq org-ellipsis " ↷")
+#+END_SRC
+
+* Packages
+** Initialize packages
+#+BEGIN_SRC emacs-lisp
+  (require 'package)
+  (package-initialize)
+  (add-to-list 'package-archives
+     '("melpa" . "https://melpa.org/packages/"))
+#+END_SRC
+
+* evil mode
+** Use evil mode
+#+BEGIN_SRC emacs-lisp
+  (require 'evil)
+  (evil-mode 1)
+#+END_SRC
+
+** Keybinds
+#+BEGIN_SRC emacs-lisp
+  (define-key evil-normal-state-map (kbd "RET") 'org-return)
+  (define-key evil-normal-state-map (kbd "C-l") 'evil-window-next)
+  (define-key evil-normal-state-map (kbd "C-k") 'evil-window-up)
+  (define-key evil-normal-state-map (kbd "SPC") 'scroll-up-command)
+  (define-key evil-normal-state-map (kbd "0") 'back-to-indentation)
+#+END_SRC
+
+* org-mode
+** List of files to parse for org-agenda
+#+BEGIN_SRC emacs-lisp
+  (setq org-agenda-files (list "~/Documents/org/index.org"
+                               "~/Documents/org/personal.org"
+                               "~/Documents/org/work.org"))
+#+END_SRC
+
+** Follow links with return
+#+BEGIN_SRC emacs-lisp
+  (setq org-return-follows-link t)
+#+END_SRC
+
+** Keybinds
+*** Cycle task states with 't'
+#+BEGIN_SRC emacs-lisp
+(define-key evil-normal-state-map "t" 'org-todo)
+
+#+END_SRC
+
+*** Use TAB to expand/collapse sections
+#+BEGIN_SRC emacs-lisp
+  (define-key evil-normal-state-map (kbd "TAB") 'org-cycle)
+#+END_SRC
+
+* org-journal
+** Set journal directory
+#+BEGIN_SRC emacs-lisp
+  (setq org-journal-dir "~/Documents/org/journal")
+#+END_SRC
+
+** Load org-journal
+#+BEGIN_SRC emacs-lisp
+  (require 'org-journal)
+#+END_SRC
+
+* Settings
+** General settings
+*** Set tab to two spaces
+#+BEGIN_SRC emacs-lisp
+  (setq-default tab-width 2)
+#+END_SRC
+
+*** Remove trailing whitespace on save
+#+BEGIN_SRC emacs-lisp
+  (add-hook 'before-save-hook 'delete-trailing-whitespace)
+#+END_SRC
+
+*** Backup file location
+#+BEGIN_SRC emacs-lisp
+  (setq backup-directory-alist
+        `((".*" . ,"~/tmp/emacs")))
+  (setq auto-save-file-name-transforms
+        `((".*" ,"~/tmp/emacs" t)))
+#+END_SRC
+
+*** Recent files
+#+BEGIN_SRC emacs-lisp
+(recentf-mode 1)
+(setq recentf-max-menu-items 25)
+(global-set-key "\C-x\C-r" 'recentf-open-files)
+#+END_SRC
+
+*** Prompt for y/n instead of yes/no
+#+BEGIN_SRC emcas-lisp
+  (fset 'yes-or-no-p 'y-or-n-p)
+#+END_SRC
+
+*** [[https://www.emacswiki.org/emacs/SmoothScrolling][Scroll one line at a time when at the end of the screen]]
+#+BEGIN_SRC emacs-lisp
+  (setq scroll-step            1
+        scroll-conservatively  10000)
+#+END_SRC
+
+** Language specific
+*** Python
+**** Tab width
+#+BEGIN_SRC emacs-lisp
+  (setq python-indent 2)
+#+END_SRC
