@@ -82,6 +82,7 @@
 ** General settings
 *** Set tab to two spaces
 #+BEGIN_SRC emacs-lisp
+  (setq-default indent-tabs-mode nil)
   (setq-default tab-width 2)
 #+END_SRC
 
@@ -106,7 +107,7 @@
 #+END_SRC
 
 *** Prompt for y/n instead of yes/no
-#+BEGIN_SRC emcas-lisp
+#+BEGIN_SRC emacs-lisp
   (fset 'yes-or-no-p 'y-or-n-p)
 #+END_SRC
 
