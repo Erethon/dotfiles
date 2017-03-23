@@ -117,6 +117,24 @@
         scroll-conservatively  10000)
 #+END_SRC
 
+*** Enable babel
+
+#+BEGIN_SRC emacs-lisp
+  (org-babel-do-load-languages
+    'org-babel-load-languages
+    '((sh . t)
+      (python . t)
+      (dot . t)
+     )
+  )
+#+END_SRC
+
+*** Set ssh as the default mode for Tramp
+
+#+BEGIN_SRC emacs-lisp
+  (setq tramp-default-method "ssh")
+#+END_SRC
+
 ** Language specific
 *** Python
 **** Tab width
