@@ -49,18 +49,19 @@
 
 ** Evil-Leader
 #+BEGIN_SRC emacs-lisp
-(require 'evil-leader)
-(global-evil-leader-mode)
-(evil-leader/set-leader ";")
-(evil-leader/set-key
-  "a" 'org-agenda
-  "c" 'org-capture
-  "k" 'kill-buffer
-  "l" 'org-insert-link
-  "0" 'delete-window
-  "1" 'split-window-horizontally
-  "2" 'split-window-vertically
-  "#" 'linum-mode)
+  (require 'evil-leader)
+  (global-evil-leader-mode)
+  (evil-leader/set-leader ";")
+  (evil-leader/set-key
+    "a" 'org-agenda
+    "b" 'switch-to-buffer
+    "c" 'org-capture
+    "k" 'kill-buffer
+    "l" 'org-insert-link
+    "0" 'delete-window
+    "'" 'split-window-horizontally
+    "\"" 'split-window-vertically
+    "#" 'linum-mode)
 #+END_SRC
 
 * org-mode
@@ -68,7 +69,7 @@
 #+BEGIN_SRC emacs-lisp
   (setq org-agenda-files (list "~/Documents/org/index.org"
                                "~/Documents/org/personal.org"
-                               "~/Documents/org/work.org"))
+                               "~/Documents/org/work/work.org"))
 #+END_SRC
 
 ** Follow links with return
@@ -79,8 +80,7 @@
 ** Keybinds
 *** Cycle task states with 't'
 #+BEGIN_SRC emacs-lisp
-(define-key evil-normal-state-map "t" 'org-todo)
-
+  (define-key evil-normal-state-map "t" 'org-todo)
 #+END_SRC
 
 *** Use TAB to expand/collapse sections
@@ -122,9 +122,9 @@
 
 *** Recent files
 #+BEGIN_SRC emacs-lisp
-(recentf-mode 1)
-(setq recentf-max-menu-items 25)
-(global-set-key "\C-x\C-r" 'recentf-open-files)
+  (recentf-mode 1)
+  (setq recentf-max-menu-items 25)
+  (global-set-key "\C-x\C-r" 'recentf-open-files)
 #+END_SRC
 
 *** Prompt for y/n instead of yes/no
@@ -139,7 +139,6 @@
 #+END_SRC
 
 *** Enable babel
-
 #+BEGIN_SRC emacs-lisp
   (org-babel-do-load-languages
     'org-babel-load-languages
@@ -151,7 +150,6 @@
 #+END_SRC
 
 *** Set ssh as the default mode for Tramp
-
 #+BEGIN_SRC emacs-lisp
   (setq tramp-default-method "ssh")
 #+END_SRC
