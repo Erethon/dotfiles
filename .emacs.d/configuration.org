@@ -1,6 +1,5 @@
 * Appearance
 ** Hide the menu bar on top
-
 #+BEGIN_SRC emacs-lisp
   (menu-bar-mode -1)
 #+END_SRC
@@ -22,13 +21,22 @@
   (setq linum-format "%d ")
 #+END_SRC
 
+** Highlight matching parentheses
+#+BEGIN_SRC emacs-lisp
+  (show-paren-mode 1)
+  (setq show-paren-delay 0)
+#+END_SRC
+
 * Packages
 ** Initialize packages
 #+BEGIN_SRC emacs-lisp
   (require 'package)
+  (setq package-archives
+     '(("melpa" . "https://melpa.org/packages/")
+       ("gnu" . "https://elpa.gnu.org/packages/")))
   (package-initialize)
-  (add-to-list 'package-archives
-     '("melpa" . "https://melpa.org/packages/"))
+  (setq tls-checktrust t)
+  (setq gnutls-verify-error t)
 #+END_SRC
 
 * evil mode
@@ -86,6 +94,12 @@
 *** Use TAB to expand/collapse sections
 #+BEGIN_SRC emacs-lisp
   (define-key evil-normal-state-map (kbd "TAB") 'org-cycle)
+#+END_SRC
+
+** Highlight code in source blocks
+#+BEGIN_SRC emacs-lisp
+  (setq org-src-fontify-natively t)
+  (setq org-src-tab-acts-natively t)
 #+END_SRC
 
 * org-journal
@@ -152,6 +166,19 @@
 *** Set ssh as the default mode for Tramp
 #+BEGIN_SRC emacs-lisp
   (setq tramp-default-method "ssh")
+#+END_SRC
+
+*** Hide most stuff from the init screen
+#+BEGIN_SRC emacs-lisp
+  (setq inhibit-startup-message t)
+  (setq inhibit-splash-screen t)
+  (setq initial-scratch-message nil)
+  (setq initial-buffer-choice "~/Documents/org")
+#+END_SRC
+
+*** Auto-close parentheses/double quotes/brackets/etc
+#+BEGIN_SRC emacs-lisp
+  (electric-pair-mode 1)
 #+END_SRC
 
 ** Language specific
