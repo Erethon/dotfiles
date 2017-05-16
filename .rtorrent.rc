@@ -5,7 +5,7 @@ directory = ~/Torrents
 session = ~/Torrents/rtorrent.session
 
 # Logging
-execute_log = ~/Torrents/rtorrent.log
+# execute_log = ~/Torrents/rtorrent.log
 
 # Use UDP trackers
 use_udp_trackers = yes

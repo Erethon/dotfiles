@@ -1,5 +1,0 @@
-# Files
-data.location=~/.task
-
-# Color theme
-include /usr/share/taskwarrior/dark-yellow-green.theme
