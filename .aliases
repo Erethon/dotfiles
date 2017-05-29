@@ -78,8 +78,13 @@ alias ll="ls -lah"
 alias cl="clear; ls"
 alias e="emacsclient"
 
-alias iptv="iptables -L -v -n --line-numbers"
-alias iptvs="ip6tables -L -v -n --line-numbers"
+iptv(){
+    iptables -v -n --line-numbers -L $@
+}
+
+iptvs(){
+    ip6tables -v -n --line-numbers -L $@
+}
 
 alias alsamixer="alsamixer -c 0"
 
