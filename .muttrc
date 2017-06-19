@@ -7,7 +7,7 @@ set sendmail = "/usr/bin/msmtp"
 
 # Automatically use alternate email address
 set reverse_name = yes
-alternates "dgrig@pollfish.com"
+alternates "dgrig@transifex.com"
 
 # Using offlineimap for this
 set folder = ~/mail/
@@ -44,6 +44,16 @@ set pgp_replyencrypt
 set pgp_show_unusable = no
 set pgp_use_gpg_agent = yes
 
+# Sidebar settings
+set sidebar_visible = yes
+set sidebar_short_path = yes
+set mail_check_stats # required for "%S" to work on sidebar_format
+
+set sidebar_format = "%B%* %S%?N?(%N)?%*"
+set sidebar_folder_indent = yes
+set sidebar_indent_string = " "
+set sidebar_divider_char = "|"
+
 # Keybinds
 bind index G    last-entry
 bind index j    next-entry
@@ -74,6 +84,8 @@ color index magenta default ~T
 color tree  magenta default
 
 color sidebar_new magenta default
+color sidebar_divider brightred default
+color sidebar_highlight black color44
 
 # Split mode
 set pager_index_lines = 8
