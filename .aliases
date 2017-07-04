@@ -70,7 +70,7 @@ alias vr="vim -R -"
 alias json="python -mjson.tool"
 
 # Common programs alias
-alias h="fc -l -10000 | grep"
+alias h="fc -l -100000 | grep"
 alias less="less -R"
 alias ls="ls --color=auto"
 alias l="ls"
