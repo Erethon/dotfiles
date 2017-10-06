@@ -77,7 +77,13 @@
 #+BEGIN_SRC emacs-lisp
   (setq org-agenda-files (list "~/Documents/org/index.org"
                                "~/Documents/org/personal.org"
-                               "~/Documents/org/work/work.org"))
+                               "~/Documents/org/work/work.org"
+                               "~/Documents/org/capture.org"))
+#+END_SRC
+
+** Org-Capture notes location
+#+BEGIN_SRC emacs-lisp
+  (setq org-default-notes-file "~/Documents/org/capture.org")
 #+END_SRC
 
 ** Follow links with return
