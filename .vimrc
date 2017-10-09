@@ -142,8 +142,3 @@ set mouse=a
 
 "Set spell checking languages
 set spelllang=en,el
-
-let g:vimwiki_list = [{'path': '~/Documents/wiki/',
-                      \'path_html': '~/Documents/wiki_html',
-                      \'syntax': 'markdown', 'ext': '.md'}]
-
