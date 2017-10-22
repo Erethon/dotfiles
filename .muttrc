@@ -26,6 +26,7 @@ set editor = vim
 set edit_headers = yes
 # Instantly change mailboxes (informational messages will be lost this way)
 set sleep_time = 0
+set sort = threads
 
 # Set index format, for info see `man muttrc'
 set index_format="%4C %Z %X %[%b %d %H:%M] %-22.22L - %s"
