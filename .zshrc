@@ -23,6 +23,7 @@ PROMPT="%{%(#~$fg[magenta]~$fg[green])%}%m %~%b %# "
 # Source aliases
 [ -f ~/.aliases ] && source ~/.aliases
 [ -f ~/.config/ls_col ] && source ~/.config/ls_col
+[ -f ~/.config/bsd_colors ] && source ~/.config/bsd_colors
 
 # Vars
 export GPG_TTY=$(tty)
