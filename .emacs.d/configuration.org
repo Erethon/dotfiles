@@ -81,9 +81,17 @@
                                "~/Documents/org/capture.org"))
 #+END_SRC
 
-** Org-Capture notes location
+** Org-Capture
+*** Templates
 #+BEGIN_SRC emacs-lisp
-  (setq org-default-notes-file "~/Documents/org/capture.org")
+  (setq org-capture-templates '(("b" "Blog" entry (file+headline "~/Documents/org/Blog/ideas.org" "Blog Topics")
+                                 "* %?": prepend t)
+                                ("t" "To Do items" entry (file+headline "~/Documents/org/capture.org" "Tasks")
+                                 "* TODO %?\n  %T": prepend t)
+                                ("l" "Links" entry (file+headline "~/Documents/org/links.org" "Read me later")
+                                 "* %?": prepend t)
+                                ("a" "Archive" entry (file+headline "~/Documents/org/archive.org" "Archive me")
+                                 "* %?": prepend t)))
 #+END_SRC
 
 ** Follow links with return
