@@ -116,6 +116,11 @@
   (setq org-src-tab-acts-natively t)
 #+END_SRC
 
+** Don't add footer in exported HTML files
+#+BEGIN_SRC emacs-lisp
+  (setq org-html-postamble nil)
+#+END_SRC
+
 * org-journal
 ** Set journal directory
 #+BEGIN_SRC emacs-lisp
