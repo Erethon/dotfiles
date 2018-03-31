@@ -23,6 +23,7 @@ http://lowendtalk.com/discussions/feed.rss Cloud
 
 https://feeds.feedburner.com/BsdNowOgg BSD
 https://bsdly.blogspot.com/feeds/posts/default?alt=rss BSD
+https://www.reddit.com/r/openbsd/.rss BSD
 https://www.geeklan.co.uk/?feed=rss2 BSD
 
 https://blog.patternsinthevoid.net/feeds/all.atom.xml Privacy
@@ -50,9 +51,6 @@ http://www.exploit-db.com/rss.xml Security
 http://goto.fail/atom.xml Security
 https://blog.hboeck.de/feeds/index.rss2 Security
 
-https://github.com/grnet/synnefo/commits/develop.atom GitHub feeds
-https://github.com/ansible/ansible/commits/devel.atom Github feeds
-
 https://www.reddit.com/r/gardening/.rss Gardening
 https://www.reddit.com/r/foraging/.rss Gardening
 https://www.reddit.com/r/mycology/.rss Gardening
@@ -63,5 +61,6 @@ https://www.reddit.com/r/homestead/.rss Homestead
 https://www.reddit.com/r/cyberpunk/.rss Random
 https://www.reddit.com/r/battlestations/.rss Random
 https://www.reddit.com/r/edc/.rss Random
+https://www.reddit.com/r/emacs/.rss Random
 
 https://www.reddit.com/r/climbing/.rss Climbing
