@@ -3,7 +3,7 @@ set realname    = "Dionysis Grigoropoulos"
 set from        = "dgrig@erethon.com"
 set use_from    = yes
 set envelope_from = yes
-set sendmail = "/usr/bin/msmtp"
+set sendmail = "msmtp"
 
 # Automatically use alternate email address
 set reverse_name = yes
@@ -15,7 +15,7 @@ set postponed = $folder/postponed
 set mbox_type = Maildir
 source ~/.mutt/mailboxes
 
-set record      = +sent
+set record = +sent
 
 set ssl_starttls = yes
 set ssl_force_tls = yes
@@ -27,6 +27,10 @@ set edit_headers = yes
 # Instantly change mailboxes (informational messages will be lost this way)
 set sleep_time = 0
 set sort = threads
+
+# Hide most headers
+ignore *
+unignore from date subject to cc
 
 # Set index format, for info see `man muttrc'
 set index_format="%4C %Z %X %[%b %d %H:%M] %-22.22L - %s"
