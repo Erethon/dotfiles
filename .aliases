@@ -104,3 +104,8 @@ archive() {
     DEST=$(dirname ~/Vault/mail/$1)
     archivemail -d 30 -o $DEST $1
 }
+
+# Add gzip header for zlib compressed files
+zlibtogz(){
+    printf "\x1f\x8b\x08\x00\x00\x00\x00\x00" | cat - $@
+}
