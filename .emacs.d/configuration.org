@@ -7,7 +7,6 @@
 ** Set theme directory and use monokai
 
 #+BEGIN_SRC emacs-lisp
-  (add-to-list 'custom-theme-load-path "~/Code/emacs/monokai-emacs")
   (load-theme 'monokai t)
 #+END_SRC
 
@@ -85,13 +84,13 @@
 *** Templates
 #+BEGIN_SRC emacs-lisp
   (setq org-capture-templates '(("b" "Blog" entry (file+headline "~/Documents/org/Blog/ideas.org" "Blog Topics")
-                                 "* %?": prepend t)
+                                 "* %?")
                                 ("t" "To Do items" entry (file+headline "~/Documents/org/capture.org" "Tasks")
-                                 "* TODO %?\n  %T": prepend t)
+                                 "* TODO %?\n  %T")
                                 ("l" "Links" entry (file+headline "~/Documents/org/links.org" "Read me later")
-                                 "* %?": prepend t)
+                                 "* %?")
                                 ("a" "Archive" entry (file+headline "~/Documents/org/archive.org" "Archive me")
-                                 "* %?": prepend t)))
+                                 "* %?")))
 #+END_SRC
 
 ** Follow links with return
