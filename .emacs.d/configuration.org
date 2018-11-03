@@ -144,6 +144,11 @@
   (add-hook 'before-save-hook 'delete-trailing-whitespace)
 #+END_SRC
 
+*** Open a debug console on errors
+#+BEGIN_SRC emacs-lisp
+  (setq debug-on-error t)
+#+END_SRC
+
 *** Backup file location
 #+BEGIN_SRC emacs-lisp
   (setq backup-directory-alist
