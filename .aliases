@@ -57,7 +57,7 @@ alias c="clear"
 
 alias clip="xclip -selection clipboard"
 alias burn="shred -n 3 -u "
-alias monitor="xrandr --output HDMI1 --mode 1920x1200 --left-of eDP1"
+alias monitor="xrandr --output HDMI1 --mode 2560x1440 --left-of eDP1"
 alias monitor2="xrandr --output LVDS1 --mode 1024x600; xrandr --output VGA1 --mode 1920x1080 --left-of LVDS1"
 
 # Common typo
@@ -109,3 +109,5 @@ archive() {
 zlibtogz(){
     printf "\x1f\x8b\x08\x00\x00\x00\x00\x00" | cat - $@
 }
+
+alias s="w3m https://google.com"
