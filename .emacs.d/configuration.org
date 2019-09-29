@@ -66,6 +66,7 @@
     "c" 'org-capture
     "k" 'kill-buffer
     "l" 'org-insert-link
+    "p" 'projectile-command-map
     "0" 'delete-window
     "'" 'split-window-horizontally
     "\"" 'split-window-vertically
@@ -130,6 +131,17 @@
 ** Load org-journal
 #+BEGIN_SRC emacs-lisp
   (require 'org-journal)
+#+END_SRC
+
+* projectile
+** Enable projectile
+#+BEGIN_SRC emacs-lisp
+  (projectile-mode +1)
+#+END_SRC
+
+** Set code and docs directories
+#+BEGIN_SRC emacs-lisp
+  (setq projectile-project-search-path '("~/Code/Erethon/" "~/Documents/org/"))
 #+END_SRC
 
 * Settings
