@@ -29,6 +29,7 @@
 * Packages
 ** Initialize packages
 #+BEGIN_SRC emacs-lisp
+  (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
   (require 'package)
   (setq package-archives
      '(("melpa" . "https://melpa.org/packages/")
