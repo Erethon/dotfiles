@@ -100,6 +100,11 @@
   (setq org-return-follows-link t)
 #+END_SRC
 
+** Set default programs to open files with
+#+BEGIN_SRC emacs-lisp
+  (add-to-list 'org-file-apps '("pdf" . "xpdf %s"))
+#+END_SRC
+
 ** Keybinds
 *** Cycle task states with 't'
 #+BEGIN_SRC emacs-lisp
