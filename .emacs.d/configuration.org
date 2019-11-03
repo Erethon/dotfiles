@@ -91,6 +91,8 @@
                                  "* TODO %?\n  %T")
                                 ("l" "Links" entry (file+headline "~/Documents/org/Capture/links.org" "Read me later")
                                  "* %?")
+                                ("r" "Rambling while working" entry (file+headline "~/Documents/org/Capture/transcribe.org" "Transcribe")
+                                 "* Transcribe %T %?\n")
                                 ("a" "Archive" entry (file+headline "~/Documents/org/Capture/archive.org" "Archive me")
                                  "* %?")))
 #+END_SRC
