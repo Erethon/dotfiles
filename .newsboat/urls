@@ -1,13 +1,10 @@
-https://www.reddit.com/r/opendirectories/.rss DataHoarding
 https://www.reddit.com/r/datahoarder/.rss DataHoarding
-https://www.reddit.com/r/DHExchange/.rss DataHoarding
 
 https://www.reddit.com/r/rtlsdr/.rss Radio
 http://www.windytan.com/feeds/posts/default Radio
 
 http://feeds2.feedburner.com/hackaday/LgoM General
 http://www.bunniestudios.com/blog/?feed=rss2 General
-http://rss.slashdot.org/Slashdot/slashdot General
 http://xobs.io/rss/ General
 http://codingquark.com/feed.xml General
 http://blog.nillware.com/rss General
@@ -30,25 +27,20 @@ http://jvns.ca/atom.xml Development
 http://feeds.feedburner.com/codinghorror?format=xml Development
 http://prog21.dadgum.com/atom.xml Development
 http://blogs.msdn.com/b/oldnewthing/rss.aspx Development
-https://www.reddit.com/r/python/.rss Development
-https://www.reddit.com/r/flask/.rss Development
-https://www.reddit.com/r/node/.rss Development
 http://nullprogram.com/feed/ Development
 
 http://www.devttys0.com/feed/ Security
 http://buffered.io/atom.xml Security
 https://www.reddit.com/r/netsec/.rss Security
 https://www.reddit.com/r/reverseengineering/.rss Security
-http://www.exploit-db.com/rss.xml Security
 http://goto.fail/atom.xml Security
 https://blog.hboeck.de/feeds/index.rss2 Security
 
-https://www.reddit.com/r/cyberpunk/.rss Random
-https://www.reddit.com/r/battlestations/.rss Random
-https://www.reddit.com/r/edc/.rss Random
 https://www.reddit.com/r/emacs/.rss Random
 
 https://events.ccc.de/feed/ Conf
+
+https://drewdevault.com/feed.xml Blogs
 
 https://www.youtube.com/feeds/videos.xml?channel_id=UClcE-kVhqyiHCcjYwcpfj9w Live0verflow
 https://www.youtube.com/feeds/videos.xml?channel_id=UCCkVMojdBWS-JtH7TliWkVg GynvaelEN
@@ -56,6 +48,8 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCjiVhIvGmRZixSzupD0sS9Q Ele
 https://www.youtube.com/feeds/videos.xml?channel_id=UC1O0jDlG51N3jGf6_9t-9mw MarcoReps
 https://www.youtube.com/feeds/videos.xml?channel_id=UCaEgw3321ct_PE4PJvdhXEQ Scanlime
 https://www.youtube.com/feeds/videos.xml?channel_id=UC8G48_G7suQlScUudVXyGkg Scanlime-In-Progress
+https://www.youtube.com/feeds/videos.xml?channel_id=UCCpOO5-6C42Mde_a7zXUFEg KateTemkin
+https://www.youtube.com/feeds/videos.xml?channel_id=UCyFQ1G1za8f4FIv2D9gwXrg Bleeptrack
 https://www.youtube.com/feeds/videos.xml?channel_id=UC6mIxFTvXkWQVEHPsEdflzQ GreatScott
 https://www.youtube.com/feeds/videos.xml?channel_id=UCvrLvII5oxSWEMEkszrxXEA N-O-D-E
 https://www.youtube.com/feeds/videos.xml?channel_id=UCS0N5baNlQWJCUrhCEo8WlA BenEater
