@@ -1,5 +1,4 @@
-#!/bin/sh
-
+#!/usr/bin/env sh
 while :
 do
     killall mbsync
