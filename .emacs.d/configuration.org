@@ -1,3 +1,4 @@
+
 * Appearance
 ** Hide the menu bar on top
 #+BEGIN_SRC emacs-lisp
@@ -78,7 +79,8 @@
 #+BEGIN_SRC emacs-lisp
   (setq org-agenda-files (list "~/Documents/org/index.org"
                                "~/Documents/org/personal.org"
-                               "~/Documents/org/work/work.org"
+                               "~/Documents/Work/index.org"
+                               "~/Documents/Work/capture.org"
                                "~/Documents/org/Capture/capture.org"))
 #+END_SRC
 
@@ -87,14 +89,20 @@
 #+BEGIN_SRC emacs-lisp
   (setq org-capture-templates '(("b" "Blog" entry (file+headline "~/Documents/org/Blog/ideas.org" "Blog Topics")
                                  "* %?")
-                                ("t" "To Do items" entry (file+headline "~/Documents/org/Capture/capture.org" "Tasks")
+                                ("t" "To Do" entry (file+headline "~/Documents/org/Capture/capture.org" "Tasks")
                                  "* TODO %?\n  %T")
-                                ("l" "Links" entry (file+headline "~/Documents/org/Capture/links.org" "Read me later")
-                                 "* %?")
+                                ("i" "Infrastructure To Do" entry (file+headline "~/Documents/org/Projects/Infrastructure/capture.org" "Tasks")
+                                 "* TODO %?\n  %T")
                                 ("r" "Rambling while working" entry (file+headline "~/Documents/org/Capture/transcribe.org" "Transcribe")
                                  "* Transcribe %T %?\n")
+                                ("p" "Project Ideas" entry (file+headline "~/Documents/org/Capture/projects.org" "Projects")
+                                 "* Idea: %?\n")
+                                ("l" "Links" entry (file+headline "~/Documents/org/Capture/links.org" "Read me later")
+                                 "* %?")
                                 ("a" "Archive" entry (file+headline "~/Documents/org/Capture/archive.org" "Archive me")
-                                 "* %?")))
+                                 "* %?")
+                                ("w" "Work" entry (file+headline "~/Documents/Work/capture.org" "Work ToDos")
+                                 "* TODO %?\n  %T")))
 #+END_SRC
 
 ** Follow links with return
@@ -132,7 +140,7 @@
 * org-journal
 ** Set journal directory
 #+BEGIN_SRC emacs-lisp
-  (setq org-journal-dir "~/Documents/org/journal")
+  (setq org-journal-dir "~/Documents/journal")
 #+END_SRC
 
 ** Load org-journal
