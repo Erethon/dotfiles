@@ -1,0 +1,9 @@
+bind l tabnext
+bind h tabprev
+
+bind / fillcmdline find
+bind n findnext 1
+bind N findnext -1
+
+set editorcmd urxvt -e vim %f
+set hintchars asdfghjkl
