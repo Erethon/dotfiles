@@ -1,18 +1,18 @@
 https://www.reddit.com/r/datahoarder/.rss DataHoarding
 
 https://www.reddit.com/r/rtlsdr/.rss Radio
-http://www.windytan.com/feeds/posts/default Radio
+https://www.windytan.com/feeds/posts/default Radio
 
-http://feeds2.feedburner.com/hackaday/LgoM General
-http://www.bunniestudios.com/blog/?feed=rss2 General
-http://xobs.io/rss/ General
-http://codingquark.com/feed.xml General
-http://blog.nillware.com/rss General
+https://feeds2.feedburner.com/hackaday/LgoM General
+https://www.bunniestudios.com/blog/?feed=rss2 General
+https://xobs.io/rss/ General
+https://codingquark.com/feed.xml General
+https://blog.nillware.com/rss General
 https://crustaceans.hmmz.org/rss20.xml General
 https://nora.codes/index.xml General
 https://spacekookie.de/blog/rss.xml General
 
-http://lowendtalk.com/discussions/feed.rss Cloud
+https://lowendtalk.com/discussions/feed.rss Cloud
 
 https://feeds.feedburner.com/BsdNowOgg BSD
 https://bsdly.blogspot.com/feeds/posts/default?alt=rss BSD
@@ -23,20 +23,20 @@ https://dataswamp.org/~solene/rss.xml BSD
 https://blog.patternsinthevoid.net/feeds/all.atom.xml Privacy
 https://diracdeltas.github.io/blog/index.xml Privacy
 
-http://feeds.feedburner.com/RyanLanesBlog DevOps
+https://feeds.feedburner.com/RyanLanesBlog DevOps
 
-http://jvns.ca/atom.xml Development
-http://feeds.feedburner.com/codinghorror?format=xml Development
-http://prog21.dadgum.com/atom.xml Development
-http://blogs.msdn.com/b/oldnewthing/rss.aspx Development
-http://nullprogram.com/feed/ Development
+https://jvns.ca/atom.xml Development
+https://feeds.feedburner.com/codinghorror?format=xml Development
+https://prog21.dadgum.com/atom.xml Development
+https://blogs.msdn.com/b/oldnewthing/rss.aspx Development
+https://nullprogram.com/feed/ Development
 https://www.reddit.com/r/rust/.rss Development
 
-http://www.devttys0.com/feed/ Security
-http://buffered.io/atom.xml Security
+https://www.devttys0.com/feed/ Security
+https://buffered.io/atom.xml Security
 https://www.reddit.com/r/netsec/.rss Security
 https://www.reddit.com/r/reverseengineering/.rss Security
-http://goto.fail/atom.xml Security
+https://goto.fail/atom.xml Security
 https://blog.hboeck.de/feeds/index.rss2 Security
 
 https://www.reddit.com/r/emacs/.rss Random
