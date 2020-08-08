@@ -9,13 +9,16 @@ HISTFILE=~/.histfile
 HISTSIZE=100000
 SAVEHIST=100000
 
+# Make `cd` behave like `pushd`
+setopt autopushd
+
 # Use vim keybinds
 bindkey -v
 bindkey "^R" history-incremental-search-backward
 
 # Prompt style
 prompt off
-#source ~/Code/zsh-git-prompt/zshrc.sh # Enable git prompt
+#source ~/Code/Shell/zsh-git-prompt/zshrc.sh # Enable git prompt
 #GIT_PROMPT_EXECUTABLE="haskell" # Use haskell for git prompt
 #PROMPT="%{%(#~$fg[magenta]~$fg[green])%}%m %~%b$(git_super_status) %# "
 PROMPT="%{%(#~$fg[magenta]~$fg[green])%}%m %~%b %# "
@@ -35,7 +38,7 @@ zstyle ':completion:*:kill:*' command 'ps -e -o pid,%cpu,cmd'
 #export WORKON_HOME=~/venvs
 #source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
 
-# Fish style history
-# source ~/Code/dotstuff/zsh-history-substring-search/zsh-history-substring-search.zsh
-# bindkey -M vicmd 'k' history-substring-search-up
-# bindkey -M vicmd 'j' history-substring-search-down
+# Custom variables for my ~/bin/ scripts
+export SCREENSHOT_DIRECTORY=~/Screenshots
+export REMOTE_SCREENSHOT_DIRECTORY="docker:/data/volumes/f.erethon.com/screen"
+export REMOTE_SCREENSHOT_URL="https://f.erethon.com/screen/"
