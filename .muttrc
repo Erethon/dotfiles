@@ -34,7 +34,7 @@ ignore *
 unignore from date subject to cc
 
 # Set index format, for info see `man muttrc'
-set index_format="%4C %Z %X %[%b %d %H:%M] %-22.22L - %s"
+set index_format="%4C %Z %X %[%d %b %Y %H:%M] %-22.22L - %s"
 
 # Ask for cc list before opening editor
 set askcc = yes
