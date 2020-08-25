@@ -3,7 +3,7 @@ https://www.reddit.com/r/datahoarder/.rss DataHoarding
 https://www.reddit.com/r/rtlsdr/.rss Radio
 https://www.windytan.com/feeds/posts/default Radio
 
-https://feeds2.feedburner.com/hackaday/LgoM General
+https://hackaday.com/feed/ General
 https://www.bunniestudios.com/blog/?feed=rss2 General
 https://xobs.io/rss/ General
 https://codingquark.com/feed.xml General
@@ -15,7 +15,6 @@ https://christine.website/blog.rss General
 
 https://lowendtalk.com/discussions/feed.rss Cloud
 
-https://feeds.feedburner.com/BsdNowOgg BSD
 https://bsdly.blogspot.com/feeds/posts/default?alt=rss BSD
 https://www.reddit.com/r/openbsd/.rss BSD
 https://www.geeklan.co.uk/?feed=rss2 BSD
@@ -24,10 +23,7 @@ https://dataswamp.org/~solene/rss.xml BSD
 https://blog.patternsinthevoid.net/feeds/all.atom.xml Privacy
 https://diracdeltas.github.io/blog/index.xml Privacy
 
-https://feeds.feedburner.com/RyanLanesBlog DevOps
-
 https://jvns.ca/atom.xml Development
-https://feeds.feedburner.com/codinghorror?format=xml Development
 https://prog21.dadgum.com/atom.xml Development
 https://blogs.msdn.com/b/oldnewthing/rss.aspx Development
 https://nullprogram.com/feed/ Development
