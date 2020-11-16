@@ -12,6 +12,10 @@ https://crustaceans.hmmz.org/rss20.xml General
 https://nora.codes/index.xml General
 https://spacekookie.de/blog/rss.xml General
 https://christine.website/blog.rss General
+https://www.unixsheikh.com/feed.rss General
+https://bsago.me/feed.atom General
+https://balaskas.gr/blog/feed/rss2/ General
+https://flak.tedunangst.com/rss General
 
 https://lowendtalk.com/discussions/feed.rss Cloud
 
@@ -19,6 +23,7 @@ https://bsdly.blogspot.com/feeds/posts/default?alt=rss BSD
 https://www.reddit.com/r/openbsd/.rss BSD
 https://www.geeklan.co.uk/?feed=rss2 BSD
 https://dataswamp.org/~solene/rss.xml BSD
+https://www.dragonflydigest.com/feed BSD
 
 https://blog.patternsinthevoid.net/feeds/all.atom.xml Privacy
 https://diracdeltas.github.io/blog/index.xml Privacy
