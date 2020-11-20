@@ -137,6 +137,11 @@
   (setq org-html-postamble nil)
 #+END_SRC
 
+** Section appearance
+#+BEGIN_SRC emacs-lisp
+  (setq org-hide-leading-stars t)
+#+END_SRC
+
 * org-journal
 ** Set journal directory
 #+BEGIN_SRC emacs-lisp
@@ -230,6 +235,12 @@
 *** Auto-close parentheses/double quotes/brackets/etc
 #+BEGIN_SRC emacs-lisp
   (electric-pair-mode 1)
+#+END_SRC
+
+*** Wrap lines automatically at 80 chars
+#+BEGIN_SRC emacs-lisp
+  (setq-default fill-column 80)
+  (add-hook 'text-mode-hook #'auto-fill-mode)
 #+END_SRC
 
 ** Language specific
