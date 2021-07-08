@@ -88,10 +88,6 @@ iptvs(){
 
 alias alsamixer="alsamixer -c 0"
 
-cse() {
-    grep -ir $1 ~/.mcabber/histo/ | sed -e 's/.*000 //'
-}
-
 # Unlock remote luks machines
 unluks() {
     read -s LUKSPASS
@@ -110,4 +106,12 @@ zlibtogz(){
     printf "\x1f\x8b\x08\x00\x00\x00\x00\x00" | cat - $@
 }
 
-alias s="w3m https://google.com"
+alias treed="tree -d"
+
+p() {
+    if [[ $(uname) == OpenBSD ]] then
+        ps aux | grep $1
+    else
+        ps -fe | grep $1
+    fi
+}
