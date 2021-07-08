@@ -19,6 +19,8 @@ https://brendan.abolivier.bzh/index.xml General
 https://dustri.org/b/atom.xml General
 https://blog.benjojo.co.uk/rss.xml General
 https://neilalexander.dev/feed.xml General
+http://ajroach42.com/feed.xml General
+https://iximiuz.com/feed.rss General
 
 https://bsdly.blogspot.com/feeds/posts/default?alt=rss BSD
 https://www.reddit.com/r/openbsd/.rss BSD
@@ -50,6 +52,9 @@ https://events.ccc.de/feed/ Conf
 https://drewdevault.com/feed.xml Blogs
 http://cachestocaches.com/feed Blogs
 
+https://lowtechlab.org/en/feed Sailing
+https://100r.co/links/rss.xml Sailing
+
 https://www.youtube.com/feeds/videos.xml?channel_id=UClcE-kVhqyiHCcjYwcpfj9w Live0verflow
 https://www.youtube.com/feeds/videos.xml?channel_id=UCCkVMojdBWS-JtH7TliWkVg GynvaelEN
 https://www.youtube.com/feeds/videos.xml?channel_id=UCBaWwFw7KmCN8YlfX4ERYKg pwn.college
@@ -66,9 +71,7 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCvrLvII5oxSWEMEkszrxXEA N-O
 https://www.youtube.com/feeds/videos.xml?channel_id=UCS0N5baNlQWJCUrhCEo8WlA BenEater
 https://www.youtube.com/feeds/videos.xml?channel_id=UC_iD0xppBwwsrM9DegC5cQQ Jonhoo
 https://www.youtube.com/feeds/videos.xml?channel_id=UCKTehwyGCKF-b2wo0RKwrcg Bisqwit
-https://www.youtube.com/feeds/videos.xml?channel_id=UC2DjFE7Xf11URZqWBigcVOQ EEVblog
 https://www.youtube.com/feeds/videos.xml?channel_id=UCXuqSBlHAE6Xw-yeJA0Tunw LTT
-https://www.youtube.com/feeds/videos.xml?channel_id=UCHkYOD-3fZbuGhwsADBd9ZQ LawrenceSystems
 https://www.youtube.com/feeds/videos.xml?channel_id=UC8uT9cgJorJPWu7ITLGo9Ww The8bitguy
 https://www.youtube.com/feeds/videos.xml?channel_id=UCjFaPUcJU1vwk193mnW_w1w ModernVintageGamer
 https://www.youtube.com/feeds/videos.xml?channel_id=UCRix1GJvSBNDpEFY561eSzw LauraKampf
@@ -89,3 +92,6 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCsTayjRIajcH1-7rHYLlBeQ Lyn
 https://www.youtube.com/feeds/videos.xml?channel_id=UCWh6PvzNVeOmEU065h-8kUw Mototrek
 https://www.youtube.com/feeds/videos.xml?channel_id=UC9fwd2mvQsb39_XfkPNeA1Q EnduroKex
 https://www.youtube.com/feeds/videos.xml?channel_id=UCdCzEBaIZQy3JXzc06ByNAg BretTkacs
+
+https://www.youtube.com/feeds/videos.xml?channel_id=UCzsjHlc0WRwZYwlinsmtM4w TheCrafsMan
+https://www.youtube.com/feeds/videos.xml?channel_id=UCe1Aj6VEO299Yq4WkXdoD3Q AlexandreChappel
