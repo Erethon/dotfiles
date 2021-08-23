@@ -1,5 +1,5 @@
-*background: #101010
-*foreground: #c0c0c0
+*background: #0a0a0a
+*foreground: #cccccc
 *cursorColor: #93a1a1
 URxvt.scrollBar: false
 URxvt.perl-ext-common: confirm-paste
