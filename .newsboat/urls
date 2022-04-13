@@ -1,4 +1,5 @@
 https://www.windytan.com/feeds/posts/default Radio
+https://www.tablix.org/~avian/blog/atom.xml Radio
 
 https://hackaday.com/feed/ General
 https://www.bunniestudios.com/blog/?feed=rss2 General
@@ -29,7 +30,8 @@ https://www.earth.li/~noodles/blog/feed.xml General
 https://jmtd.net/log/index.atom General
 https://icyphox.sh/blog/feed.xml General
 https://ratfactor.com/atom.xml General
-https://kevinlynagh.com/feed.xml
+https://kevinlynagh.com/feed.xml General
+https://anarc.at/blog/index.rss General
 
 https://elegantnetwork.github.io/feed.xml Networking
 
@@ -49,7 +51,6 @@ https://jvns.ca/atom.xml Development
 https://prog21.dadgum.com/atom.xml Development
 https://blogs.msdn.com/b/oldnewthing/rss.aspx Development
 https://nullprogram.com/feed/ Development
-https://www.reddit.com/r/rust/.rss Development
 
 https://www.devttys0.com/feed/ Security
 https://buffered.io/atom.xml Security
@@ -59,6 +60,7 @@ https://goto.fail/atom.xml Security
 https://blog.hboeck.de/feeds/index.rss2 Security
 
 https://www.reddit.com/r/emacs/.rss Random
+https://blog.cloudflare.com/rss/ Random
 
 https://events.ccc.de/feed/ Conf
 
@@ -118,3 +120,5 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCdCzEBaIZQy3JXzc06ByNAg Bre
 
 https://www.youtube.com/feeds/videos.xml?channel_id=UCzsjHlc0WRwZYwlinsmtM4w TheCrafsMan
 https://www.youtube.com/feeds/videos.xml?channel_id=UCe1Aj6VEO299Yq4WkXdoD3Q AlexandreChappel
+
+https://www.radicalit.gr/feed/ News
