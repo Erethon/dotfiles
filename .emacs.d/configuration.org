@@ -1,4 +1,3 @@
-
 * Appearance
 ** Hide the menu bar on top
 #+BEGIN_SRC emacs-lisp
@@ -35,7 +34,6 @@
   (setq package-archives
      '(("melpa" . "https://melpa.org/packages/")
        ("gnu" . "https://elpa.gnu.org/packages/")))
-  (package-initialize)
   (setq tls-checktrust t)
   (setq gnutls-verify-error t)
 #+END_SRC
@@ -43,6 +41,7 @@
 * evil mode
 ** Use evil mode
 #+BEGIN_SRC emacs-lisp
+  (setq evil-want-keybinding nil)
   (require 'evil)
   (evil-mode 1)
 #+END_SRC
@@ -68,17 +67,23 @@
     "k" 'kill-buffer
     "l" 'org-insert-link
     "p" 'projectile-command-map
+    "t" 'org-set-tags-command
     "0" 'delete-window
     "'" 'split-window-horizontally
     "\"" 'split-window-vertically
     "#" 'linum-mode)
 #+END_SRC
 
+** Evil Collection
+#+BEGIN_SRC emacs-lisp
+  (evil-collection-init '(calendar dired))
+#+END_SRC
+
 * org-mode
 ** List of files to parse for org-agenda
 #+BEGIN_SRC emacs-lisp
   (setq org-agenda-files (list "~/Documents/org/index.org"
-                               "~/Documents/org/personal.org"
+                               "~/Documents/org/agenda.org"
                                "~/Documents/Work/index.org"
                                "~/Documents/Work/capture.org"
                                "~/Documents/org/Capture/capture.org"))
@@ -108,11 +113,6 @@
 ** Follow links with return
 #+BEGIN_SRC emacs-lisp
   (setq org-return-follows-link t)
-#+END_SRC
-
-** Set default programs to open files with
-#+BEGIN_SRC emacs-lisp
-  (add-to-list 'org-file-apps '("pdf" . "xpdf %s"))
 #+END_SRC
 
 ** Keybinds
