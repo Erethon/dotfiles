@@ -45,11 +45,13 @@ shutd(){
 wifi(){
     sudo rfkill unblock wifi
     sleep 1
-    sudo ifconfig wlan0 down
-    sudo macchanger -r wlan0
-    sudo ifconfig wlan0 up
-    sudo service wicd start
-    wicd-curses
+    sudo ifconfig wlp3s0 down
+    sudo macchanger -r wlp3s0
+    sudo ifconfig wlp3s0 up
+    echo Running wpa_supplicant...
+    sudo wpa_supplicant -c /etc/wpa_supplicant/$1.conf -i wlp3s0 -B
+    echo Running DHCP
+    sudo dhclient wlp3s0
 }
 
 # Clear terminal
@@ -115,3 +117,5 @@ p() {
         ps -fe | grep $1
     fi
 }
+
+alias d="dpkg -l | grep $1"
