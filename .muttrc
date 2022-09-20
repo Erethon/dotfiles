@@ -7,8 +7,6 @@ set sendmail = "msmtp"
 
 # Automatically use alternate email address
 set reverse_name = yes
-alternates "dionysisg@matrix.org"
-alternates "dionysisg@element.io"
 
 # Using offlineimap for this
 set folder = ~/mail/
