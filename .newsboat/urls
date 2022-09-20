@@ -33,11 +33,17 @@ https://ratfactor.com/atom.xml General
 https://kevinlynagh.com/feed.xml General
 https://anarc.at/blog/index.rss General
 https://www.xyte.ch/feed/ General
+https://zserge.com/rss.xml General
+https://blog.erethon.com/index.xml General
+https://artemis.sh/feed.xml General
+https://iliana.fyi/atom.xml General
+https://blog.brixit.nl/rss/ General
+https://j3s.sh/feed.atom General
+https://herman.bearblog.dev/feed/ General
 
 https://elegantnetwork.github.io/feed.xml Networking
 
 https://bsdly.blogspot.com/feeds/posts/default?alt=rss BSD
-https://www.reddit.com/r/openbsd/.rss BSD
 https://www.geeklan.co.uk/?feed=rss2 BSD
 https://dataswamp.org/~solene/rss.xml BSD
 https://www.dragonflydigest.com/feed BSD
@@ -55,12 +61,9 @@ https://nullprogram.com/feed/ Development
 
 https://www.devttys0.com/feed/ Security
 https://buffered.io/atom.xml Security
-https://www.reddit.com/r/netsec/.rss Security
-https://www.reddit.com/r/reverseengineering/.rss Security
 https://goto.fail/atom.xml Security
 https://blog.hboeck.de/feeds/index.rss2 Security
 
-https://www.reddit.com/r/emacs/.rss Random
 https://blog.cloudflare.com/rss/ Random
 
 https://events.ccc.de/feed/ Conf
