@@ -1,9 +1,16 @@
 [core]
     editor = vim
 
+[gpg]
+    format = ssh
+
+[gpg "ssh"]
+    allowedSignersFile = "~/.config/git/trusted_public_keys"
+
 [user]
     name = Dionysis Grigoropoulos
     email = dgrig@erethon.com
+    signingkey = "key::sk-ssh-ed25519@openssh.com AAAAGnNrLXNzaC1lZDI1NTE5QG9wZW5zc2guY29tAAAAIPb9z1U7Sti2lls0mlcmyPwmwD91amKwVlLZHYclSoULAAAABHNzaDo="
 
 [merge]
     ff = false
