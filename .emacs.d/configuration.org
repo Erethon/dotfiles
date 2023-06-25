@@ -142,6 +142,20 @@
   (setq org-hide-leading-stars t)
 #+END_SRC
 
+** Keep org files folded when opening them
+#+BEGIN_SRC emacs-lisp
+  (setq org-startup-folded t)
+#+END_SRC
+
+** Task keywords
+I find that I lately have ended up with a lot of tasks that I want to keep a
+history of instead of just deleting them once there's no need for them anymore,
+but I'm lacking a keyword for "not applicable anymore".
+#+BEGIN_SRC emacs-lisp
+(setq org-todo-keywords
+      '((sequence "TODO" "|" "DONE" "NA")))
+#+END_SRC
+
 * org-journal
 ** Set journal directory
 #+BEGIN_SRC emacs-lisp
