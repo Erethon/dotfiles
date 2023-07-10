@@ -153,13 +153,17 @@ history of instead of just deleting them once there's no need for them anymore,
 but I'm lacking a keyword for "not applicable anymore".
 #+BEGIN_SRC emacs-lisp
 (setq org-todo-keywords
-      '((sequence "TODO" "|" "DONE" "NA")))
+      '((sequence "TODO" "|" "DONE" "NA" "FAILED")))
 #+END_SRC
 
 * org-journal
 ** Set journal directory
 #+BEGIN_SRC emacs-lisp
   (setq org-journal-dir "~/Documents/journal")
+#+END_SRC
+** Set date format to DDMMYY
+#+BEGIN_SRC emacs-lisp
+  (setq org-journal-date-format "%A, %d/%m/%Y")
 #+END_SRC
 
 ** Load org-journal
