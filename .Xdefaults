@@ -2,7 +2,7 @@
 *foreground: #cccccc
 *cursorColor: #93a1a1
 URxvt.scrollBar: false
-URxvt.perl-ext-common: confirm-paste
+URxvt.perl-ext-common: confirm-paste,font-size
 URxvt.boldFont:
 URxvt.font: xft:Terminus:style=medium:pixelsize=14:antialias=true:hinting=full
 
