@@ -165,6 +165,10 @@ but I'm lacking a keyword for "not applicable anymore".
 #+BEGIN_SRC emacs-lisp
   (setq org-journal-date-format "%A, %d/%m/%Y")
 #+END_SRC
+** Disable carry over of tasks
+#+BEGIN_SRC emacs-lisp
+  (setq org-journal-carryover-items "")
+#+END_SRC
 
 ** Load org-journal
 #+BEGIN_SRC emacs-lisp
