@@ -29,6 +29,7 @@
     ls = log --show-signature
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset by %C(yellow)%ae%Creset' --abbrev-commit --date=relative
     lgg = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset by %C(yellow)%ae%Creset' --abbrev-commit --date=relative
+    wd = diff --word-diff
 
 [sendemail]
     smtpencryption = tls
@@ -41,3 +42,9 @@
 
 [push]
     default = matching
+
+[init]
+    defaultBranch = main
+
+[branch]
+    sort = -committerdate
