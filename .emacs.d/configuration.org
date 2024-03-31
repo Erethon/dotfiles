@@ -24,6 +24,7 @@
 #+BEGIN_SRC emacs-lisp
   (show-paren-mode 1)
   (setq show-paren-delay 0)
+  (setq show-trailing-whitespace t)
 #+END_SRC
 
 * Packages
@@ -155,7 +156,10 @@ but I'm lacking a keyword for "not applicable anymore".
 (setq org-todo-keywords
       '((sequence "TODO" "|" "DONE" "NA" "FAILED")))
 #+END_SRC
-
+** Bring back the old template system with <s TAB
+#+BEGIN_SRC emacs-lisp
+  (require 'org-tempo)
+#+END_SRC
 * org-journal
 ** Set journal directory
 #+BEGIN_SRC emacs-lisp
