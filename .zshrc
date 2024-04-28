@@ -12,10 +12,6 @@ SAVEHIST=100000
 # Make `cd` behave like `pushd`
 setopt autopushd
 
-# Use vim keybinds
-bindkey -v
-bindkey "^R" history-incremental-search-backward
-
 # Prompt style
 prompt off
 #source ~/Code/Shell/zsh-git-prompt/zshrc.sh # Enable git prompt
@@ -42,3 +38,13 @@ zstyle ':completion:*:kill:*' command 'ps -e -o pid,%cpu,cmd'
 export SCREENSHOT_DIRECTORY=~/Screenshots
 export REMOTE_SCREENSHOT_DIRECTORY="docker:/data/volumes/f.erethon.com/screen"
 export REMOTE_SCREENSHOT_URL="https://f.erethon.com/screen/"
+
+if command -v fzf-share >/dev/null; then
+  source "$(fzf-share)/key-bindings.zsh"
+  source "$(fzf-share)/completion.zsh"
+fi
+
+if [ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]; then
+  source /usr/share/doc/fzf/examples/key-bindings.zsh
+  source /usr/share/doc/fzf/examples/completion.zsh
+fi

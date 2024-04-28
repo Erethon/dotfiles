@@ -87,9 +87,6 @@ nnoremap <c-l> gt
 "Use <Space> to go half-page down
 nnoremap <Space> <c-d>
 
-"Faster Normal Mode
-imap ii <Esc>
-
 "Pep8 checking
 map <F5> :!pep8 % <Enter>
 
