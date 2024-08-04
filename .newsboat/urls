@@ -62,8 +62,24 @@ https://www.willwhang.dev/feed.xml General
 https://there.oughta.be/feed.xml General
 https://blog.orhun.dev/rss.xml General
 https://qdiv.dev/index.xml General
+https://delroth.net/posts/index.xml General
+https://emersion.fr/blog/atom.xml General
+https://mbuffett.com/posts/index.xml General
+https://www.tumfatig.net/index.xml General
+https://www.netmeister.org/blog/rss.xml General
+https://hiandrewquinn.github.io/til-site/index.xml General
+https://jacksonchen666.com/links/index.xml General
+https://jacksonchen666.com/posts/index.xml General
+https://simeononsecurity.com/index.xml General
+https://sidhion.com/index.xml General
+https://isabelroses.com/feed.xml General
+https://louwrentius.com/feed/all.atom.xml General
 
 https://elegantnetwork.github.io/feed.xml Networking
+
+https://nixpkgs.news/rss.xml Nix
+https://jade.fyi/rss.xml Nix
+https://nat-418.xyz/rss.xml Nix
 
 https://bsdly.blogspot.com/feeds/posts/default?alt=rss BSD
 https://www.geeklan.co.uk/?feed=rss2 BSD
@@ -142,6 +158,15 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCBPLij8RWsQrMxl_bjk-R8w DOS
 https://www.youtube.com/feeds/videos.xml?channel_id=UC6dTi88TnCio5-XWaNLPnBQ MandicReally
 https://www.youtube.com/feeds/videos.xml?channel_id=UCqfMW0tMZEciSXQym8x0EoQ ProperPrinting
 https://www.youtube.com/feeds/videos.xml?channel_id=UChAu6Cof9KlfFxSbL9ytosQ HamRadioCrashCourse
+https://www.youtube.com/feeds/videos.xml?channel_id=UC67TJP9i84zbCi2h1aaSO6Q RingwayManchester
+https://www.youtube.com/feeds/videos.xml?channel_id=UC9a8Z6Sp6eb2s3O79pX5Zvg TechMinds
+https://www.youtube.com/feeds/videos.xml?channel_id=UCacth3foPsjqgV4wW4kuDDw TheTechPrepper
+https://www.youtube.com/feeds/videos.xml?channel_id=UC3xxr5EeFDtxnuHTWsDu2rA OH8STN
+https://www.youtube.com/feeds/videos.xml?channel_id=UCiVRd1ydpJCKLFtNvPUpisg K6ARK
+https://www.youtube.com/feeds/videos.xml?channel_id=UCKpVMjRE0m60lKCBWhIlo0A HamRadio2.0
+https://www.youtube.com/feeds/videos.xml?channel_id=UCai-PmK8xOBOunwi6MoBgwQ TempOfflineHam
+https://www.youtube.com/feeds/videos.xml?channel_id=UCOe0_RzGUDm73XNtRozPfMw ModernHam
+https://www.youtube.com/feeds/videos.xml?channel_id=UCAbAsEZ-0LccTNbl8r-3EaQ ScottYujan
 https://www.youtube.com/feeds/videos.xml?channel_id=UCVa4o0P6xhhSDi3rgLm2SBw Recessim
 https://www.youtube.com/feeds/videos.xml?channel_id=UCu7_D0o48KbfhpEohoP7YSQ AndreasSpiess
 https://www.youtube.com/feeds/videos.xml?channel_id=UCQwyP4Yd0-O49e05kMUJgQQ HB9BLA
@@ -161,6 +186,11 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCwdVOry0oNF9WIe_3uCfz9Q Mat
 https://www.youtube.com/feeds/videos.xml?channel_id=UCMomXi6WrkGvJ9ysZ-EeVAA ShopNation
 https://www.youtube.com/feeds/videos.xml?channel_id=UCcGXEidw0qjNdq7Gii8gHgg ProjectKamp
 https://www.youtube.com/feeds/videos.xml?channel_id=UClkUhTjFbQbtGfS14h9Vw5g MartjinDoolaard
+https://www.youtube.com/feeds/videos.xml?channel_id=UCyUJ5HA_wzpphAd-dn2F7Nw TomTomsShop
+https://www.youtube.com/feeds/videos.xml?channel_id=UC06HVrkOL33D5lLnCPjr6NQ BreakingTaps
+https://www.youtube.com/feeds/videos.xml?channel_id=UCdxTCCRnQgfi2vr2fZupYIQ CarlBugeja
+https://www.youtube.com/feeds/videos.xml?channel_id=UCMPtzN8fnhHLpihCT1QvFZw camshand
+https://www.youtube.com/feeds/videos.xml?channel_id=UCUI60hHqVzmePotF83Ecxhw FelixSchelhasse
 
 https://www.youtube.com/feeds/videos.xml?channel_id=UCNSMdQtn1SuFzCZjfK2C7dQ FortNine
 https://www.youtube.com/feeds/videos.xml?channel_id=UCY3mZIqfQh71JZBiWTQ3I7A Ariemann1
