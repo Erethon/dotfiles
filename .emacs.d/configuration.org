@@ -83,11 +83,8 @@
 * org-mode
 ** List of files to parse for org-agenda
 #+BEGIN_SRC emacs-lisp
-  (setq org-agenda-files (list "~/Documents/org/index.org"
-                               "~/Documents/org/agenda.org"
-                               "~/Documents/Work/index.org"
-                               "~/Documents/Work/capture.org"
-                               "~/Documents/org/Capture/capture.org"))
+  (setq org-agenda-files (list "~/Documents/Work/index.org"
+                               "~/Documents/roam"))
 #+END_SRC
 
 ** Org-Capture
@@ -95,8 +92,6 @@
 #+BEGIN_SRC emacs-lisp
   (setq org-capture-templates '(("b" "Blog" entry (file+headline "~/Documents/org/Blog/ideas.org" "Blog Topics")
                                  "* %?")
-                                ("t" "To Do" entry (file+headline "~/Documents/org/Capture/capture.org" "Tasks")
-                                 "* TODO %?\n  %T")
                                 ("i" "Infrastructure To Do" entry (file+headline "~/Documents/org/Projects/Infrastructure/capture.org" "Tasks")
                                  "* TODO %?\n  %T")
                                 ("r" "Rambling while working" entry (file+headline "~/Documents/org/Capture/transcribe.org" "Transcribe")
@@ -106,9 +101,7 @@
                                 ("l" "Links" entry (file+headline "~/Documents/org/Capture/links.org" "Read me later")
                                  "* %?")
                                 ("a" "Archive" entry (file+headline "~/Documents/org/Capture/archive.org" "Archive me")
-                                 "* %?")
-                                ("w" "Work" entry (file+headline "~/Documents/Work/capture.org" "Work ToDos")
-                                 "* TODO %?\n  %T")))
+                                 "* %?")))
 #+END_SRC
 
 ** Follow links with return
@@ -156,10 +149,12 @@ but I'm lacking a keyword for "not applicable anymore".
 (setq org-todo-keywords
       '((sequence "TODO" "|" "DONE" "NA" "FAILED")))
 #+END_SRC
+
 ** Bring back the old template system with <s TAB
 #+BEGIN_SRC emacs-lisp
   (require 'org-tempo)
 #+END_SRC
+
 * org-journal
 ** Set journal directory
 #+BEGIN_SRC emacs-lisp
@@ -179,6 +174,39 @@ but I'm lacking a keyword for "not applicable anymore".
   (require 'org-journal)
 #+END_SRC
 
+* org-roam
+ ** Set org-roam notes directory
+ #+BEGIN_SRC emacs-lisp
+   (setq org-roam-directory "~/Documents/roam")
+ #+END_SRC
+ ** Keybinds
+ #+begin_src emacs-lisp
+   (global-set-key (kbd "C-c C-j") 'org-journal-new-entry)
+   (global-set-key (kbd "C-c n f") 'org-roam-node-find)
+   (global-set-key (kbd "C-c n g") 'org-roam-graph)
+   (global-set-key (kbd "C-c n i") 'org-roam-node-insert)
+   (global-set-key (kbd "C-c n c") 'org-roam-capture)
+   (global-set-key (kbd "C-c n j") 'org-roam-dailies-capture-today)
+ #+end_src
+ ** Enable DB autosync
+ #+begin_src emacs-lisp
+   (org-roam-db-autosync-mode)
+ #+end_src
+
+* org-contacts
+** Enable org-contacts
+#+begin_src emacs-lisp
+  (require 'org-contacts)
+#+end_src
+** Disable usage of Gravatar to fetch avatars
+#+begin_src emacs-lisp
+  (setq org-contacts-icon-use-gravatar nil)
+#+end_src
+
+** Set files to use for org-contacts
+#+begin_src emacs-lisp
+  (setq org-contacts-files '("~/Documents/org/PRM/contacts.org"))
+#+end_src
 * projectile
 ** Enable projectile
 #+BEGIN_SRC emacs-lisp
@@ -187,7 +215,7 @@ but I'm lacking a keyword for "not applicable anymore".
 
 ** Set code and docs directories
 #+BEGIN_SRC emacs-lisp
-  (setq projectile-project-search-path '("~/Code/Erethon/" "~/Documents/org/"))
+  (setq projectile-project-search-path '("~/Code/Erethon/" "~/Documents/org/" "~/Code/Clients"))
 #+END_SRC
 
 * Settings
@@ -267,11 +295,4 @@ but I'm lacking a keyword for "not applicable anymore".
 #+BEGIN_SRC emacs-lisp
   (setq-default fill-column 80)
   (add-hook 'text-mode-hook #'auto-fill-mode)
-#+END_SRC
-
-** Language specific
-*** Python
-**** Tab width
-#+BEGIN_SRC emacs-lisp
-  (setq python-indent 4)
 #+END_SRC
