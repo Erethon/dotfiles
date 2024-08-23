@@ -155,25 +155,6 @@ but I'm lacking a keyword for "not applicable anymore".
   (require 'org-tempo)
 #+END_SRC
 
-* org-journal
-** Set journal directory
-#+BEGIN_SRC emacs-lisp
-  (setq org-journal-dir "~/Documents/journal")
-#+END_SRC
-** Set date format to DDMMYY
-#+BEGIN_SRC emacs-lisp
-  (setq org-journal-date-format "%A, %d/%m/%Y")
-#+END_SRC
-** Disable carry over of tasks
-#+BEGIN_SRC emacs-lisp
-  (setq org-journal-carryover-items "")
-#+END_SRC
-
-** Load org-journal
-#+BEGIN_SRC emacs-lisp
-  (require 'org-journal)
-#+END_SRC
-
 * org-roam
  ** Set org-roam notes directory
  #+BEGIN_SRC emacs-lisp
@@ -181,7 +162,6 @@ but I'm lacking a keyword for "not applicable anymore".
  #+END_SRC
  ** Keybinds
  #+begin_src emacs-lisp
-   (global-set-key (kbd "C-c C-j") 'org-journal-new-entry)
    (global-set-key (kbd "C-c n f") 'org-roam-node-find)
    (global-set-key (kbd "C-c n g") 'org-roam-graph)
    (global-set-key (kbd "C-c n i") 'org-roam-node-insert)
