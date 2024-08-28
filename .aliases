@@ -119,3 +119,5 @@ p() {
 }
 
 alias d="dpkg -l | grep $1"
+
+alias nsu="nix-shell -I nixpkgs=https://github.com/NixOS/nixpkgs/archive/nixpkgs-unstable.tar.gz"
