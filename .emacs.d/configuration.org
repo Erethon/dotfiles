@@ -92,16 +92,16 @@
 #+BEGIN_SRC emacs-lisp
   (setq org-capture-templates '(("b" "Blog" entry (file+headline "~/Documents/org/Blog/ideas.org" "Blog Topics")
                                  "* %?")
-                                ("i" "Infrastructure To Do" entry (file+headline "~/Documents/org/Projects/Infrastructure/capture.org" "Tasks")
-                                 "* TODO %?\n  %T")
                                 ("r" "Rambling while working" entry (file+headline "~/Documents/org/Capture/transcribe.org" "Transcribe")
                                  "* Transcribe %T %?\n")
-                                ("p" "Project Ideas" entry (file+headline "~/Documents/org/Capture/projects.org" "Projects")
-                                 "* Idea: %?\n")
-                                ("l" "Links" entry (file+headline "~/Documents/org/Capture/links.org" "Read me later")
-                                 "* %?")
-                                ("a" "Archive" entry (file+headline "~/Documents/org/Capture/archive.org" "Archive me")
-                                 "* %?")))
+                                ("s" "Software" entry (file+olp "~/Documents/Work/index.org" "Erethon" "Software Projects")
+                                 "* TODO %?\n %T")
+                                ("h" "Hardware" entry (file+olp "~/Documents/Work/index.org" "Erethon" "Hardware Projects")
+                                 "* TODO %?\n %T")
+                                ("f" "FOSS" entry (file+olp "~/Documents/Work/index.org" "Erethon" "FOSS")
+                                 "* TODO %?\n %T")
+                                ("c" "Chores" entry (file+olp "~/Documents/Work/index.org" "Erethon" "Chores or admin work")
+                                 "* TODO %?\n %T")))
 #+END_SRC
 
 ** Follow links with return
