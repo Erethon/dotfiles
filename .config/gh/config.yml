@@ -1,0 +1,10 @@
+version: 1
+git_protocol: ssh
+editor:
+prompt: enabled
+pager:
+aliases:
+    co: pr checkout
+    n: -R nixos/nixpkgs pr list --search
+http_unix_socket:
+browser:
