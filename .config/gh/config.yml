@@ -5,6 +5,9 @@ prompt: enabled
 pager:
 aliases:
     co: pr checkout
-    n: -R nixos/nixpkgs pr list --search
+    n: -R nixos/nixpkgs
+    ns: -R nixos/nixpkgs pr list --search
+    i: search issues --assignee @me --state open
+    p: search prs --author @me --state open
 http_unix_socket:
 browser:
