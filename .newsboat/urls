@@ -6,9 +6,8 @@ https://usradioguy.com/feed/ Radio
 https://blog.habets.se/feed.xml Radio
 https://www.zeroretries.org/feed Radio
 
-https://hackaday.com/feed/ General
 https://www.bunniestudios.com/blog/?feed=rss2 General
-https://xobs.io/rss/ General
+https://xobs.io/index.xml General
 https://codingquark.com/feed.xml General
 https://blog.nillware.com/rss General
 https://crustaceans.hmmz.org/rss20.xml General
@@ -30,7 +29,7 @@ https://iximiuz.com/feed.rss General
 https://fabiensanglard.net/rss.xml General
 https://karl-voit.at/feeds/lazyblorg-all.atom_1.0.links-only.xml General
 https://plaindrops.de/rss.xml General
-https://chaijiaxun.com/rss/ General
+https://chaijiaxun.com/blog/rss/ General
 https://www.earth.li/~noodles/blog/feed.xml General
 https://jmtd.net/log/index.atom General
 https://icyphox.sh/blog/feed.xml General
@@ -51,7 +50,7 @@ https://getimiskon.xyz/rss.xml General
 https://jamesmunns.com/rss.xml General
 https://test.roelof.info/index.xml General
 https://skyriddles.wordpress.com/feed/ General
-https://deprogrammaticaipsum.com/rss General
+https://deprogrammaticaipsum.com/index.xml General
 https://stamou.cc/index.xml General
 https://half-shot.uk/atom.xml General
 https://brainbaking.com/index.xml General
@@ -71,7 +70,7 @@ https://hiandrewquinn.github.io/til-site/index.xml General
 https://jacksonchen666.com/links/index.xml General
 https://jacksonchen666.com/posts/index.xml General
 https://simeononsecurity.com/index.xml General
-https://sidhion.com/index.xml General
+https://sidhion.com/rss.xml General
 https://isabelroses.com/feed.xml General
 https://louwrentius.com/feed/all.atom.xml General
 https://chronicles.mad-scientist.club/atom.xml General
@@ -79,6 +78,20 @@ https://switowski.com/feed.xml General
 https://it-notes.dragas.net/index.xml General
 https://ergaster.org/rss.xml General
 https://weblog.masukomi.org/index.xml General
+https://notgull.net/feed.xml General
+https://sprocketfox.io/xssfox/index.xml General
+https://slyka.net/blog/atom.xml General
+https://sidhion.com/index.xml General
+https://purplesyringa.moe/blog/feed.rss General
+https://simonwillison.net/atom/everything/ General
+https://blog.eyesin.space/rss.xml General
+https://stefan-gloor.ch/rss.xml General
+https://bitfehler.srht.site/index.xml General
+https://borretti.me/feed.xml General
+https://emilygorcenski.com/index.xml General
+https://fangpenlin.com/feed.xml General
+https://pierrezemb.fr/rss.xml General
+https://マリウス.com/index.xml General
 
 https://elegantnetwork.github.io/feed.xml Networking
 
@@ -101,21 +114,19 @@ https://diracdeltas.github.io/blog/index.xml Privacy
 
 https://jvns.ca/atom.xml Development
 https://prog21.dadgum.com/atom.xml Development
-https://blogs.msdn.com/b/oldnewthing/rss.aspx Development
 https://nullprogram.com/feed/ Development
 
 https://www.devttys0.com/feed/ Security
-https://buffered.io/atom.xml Security
+https://buffered.io/index.xml Security
 https://goto.fail/atom.xml Security
 https://blog.hboeck.de/feeds/index.rss2 Security
 https://pushfs.org/rss.xml Security
 https://maia.crimew.gay/feed.xml Security
-
-https://blog.cloudflare.com/rss/ Random
+https://labs.watchtowr.com/rss/ Security
 
 https://events.ccc.de/feed/ Conf
 
-https://drewdevault.com/feed.xml Blogs
+https://drewdevault.com/blog/index.xml Blogs
 http://cachestocaches.com/feed Blogs
 
 https://lowtechlab.org/en/feed Sailing
@@ -127,7 +138,6 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCjiVhIvGmRZixSzupD0sS9Q Ele
 https://www.youtube.com/feeds/videos.xml?channel_id=UC1O0jDlG51N3jGf6_9t-9mw MarcoReps
 https://www.youtube.com/feeds/videos.xml?channel_id=UCaEgw3321ct_PE4PJvdhXEQ Scanlime
 https://www.youtube.com/feeds/videos.xml?channel_id=UC8G48_G7suQlScUudVXyGkg Scanlime-In-Progress
-https://www.youtube.com/feeds/videos.xml?channel_id=UCCpOO5-6C42Mde_a7zXUFEg KateTemkin
 https://www.youtube.com/feeds/videos.xml?channel_id=UCf2O7PWyhBZYOAn2LJo6xMg Piotr-Esden-Tempski
 https://www.youtube.com/feeds/videos.xml?channel_id=UCMf49SMPnhxdLormhEpfyfg StephenTheRobot
 https://www.youtube.com/feeds/videos.xml?channel_id=UCyFQ1G1za8f4FIv2D9gwXrg Bleeptrack
