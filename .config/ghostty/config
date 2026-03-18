@@ -1,0 +1,8 @@
+background = #171812
+foreground = #cccccc
+font-family = "Terminus"
+font-style-bold = "Terminus Regular"
+font-size = 28
+window-decoration = none
+right-click-action = ignore
+theme = Monokai Classic
