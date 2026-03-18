@@ -120,8 +120,6 @@ p() {
 
 alias d="dpkg -l | grep $1"
 
-alias nsu="nix-shell -I nixpkgs=https://github.com/NixOS/nixpkgs/archive/nixpkgs-unstable.tar.gz"
-
 ns() {
     local packages="$*"
     command nix-shell -p "$@" --run "export NIX_PACKAGES='$packages' && exec zsh"
@@ -134,3 +132,4 @@ ne() {
 }
 
 alias ab="echo 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'"
+alias monitor-desktop="xrandr --output DP-2 --mode 1920x1080 --right-of DP-3 --rotate right"
