@@ -121,3 +121,16 @@ p() {
 alias d="dpkg -l | grep $1"
 
 alias nsu="nix-shell -I nixpkgs=https://github.com/NixOS/nixpkgs/archive/nixpkgs-unstable.tar.gz"
+
+ns() {
+    local packages="$*"
+    command nix-shell -p "$@" --run "export NIX_PACKAGES='$packages' && exec zsh"
+}
+
+alias nds="nix derivation show $1"
+
+ne() {
+    nix edit "nixpkgs#$1"
+}
+
+alias ab="echo 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'"
