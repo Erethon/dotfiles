@@ -61,6 +61,7 @@ alias clip="xclip -selection clipboard"
 alias burn="shred -n 3 -u "
 alias monitor="xrandr --output HDMI1 --mode 2560x1440 --left-of eDP1"
 alias monitor2="xrandr --output LVDS1 --mode 1024x600; xrandr --output VGA1 --mode 1920x1080 --left-of LVDS1"
+alias monitordesktop="xrandr --output DP-1 --mode 1920x1080 --right-of DP-2 --rotate right"
 
 # Common typo
 alias les="less"
@@ -133,3 +134,4 @@ ne() {
 
 alias ab="echo 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'"
 alias monitor-desktop="xrandr --output DP-2 --mode 1920x1080 --right-of DP-3 --rotate right"
+alias cal="cal -3"
