@@ -48,3 +48,6 @@
 
 [branch]
     sort = -committerdate
+
+[log]
+    follow = true
