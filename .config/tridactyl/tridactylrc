@@ -5,5 +5,14 @@ bind / fillcmdline find
 bind n findnext 1
 bind N findnext -1
 
-set editorcmd urxvt -e vim %f
+unbind s
+
+set editorcmd ghostty -e vim %f
 set hintchars asdfghjkl
+
+blacklistadd riot.dgrig.com
+
+set searchurls.nixpkgs https://search.nixos.org/packages?query=%s
+set searchurls.nixopts https://search.nixos.org/options?query=%s
+bind sn fillcmdline tabopen nixpkgs
+bind so fillcmdline tabopen nixopts
