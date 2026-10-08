@@ -1,0 +1,2 @@
+application/pdf; firefox -p FileOpener %s
+text/html; firefox -p FileOpener %s

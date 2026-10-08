@@ -43,17 +43,12 @@ set sort_alias = address
 set reverse_alias = yes
 source $alias_file
 
-# PGP/GPG stuff
-set pgp_replyencrypt
-set pgp_show_unusable = no
-set pgp_use_gpg_agent = yes
-
 # Sidebar settings
 set sidebar_visible = yes
 set sidebar_short_path = yes
 set mail_check_stats # required for "%S" to work on sidebar_format
 
-set sidebar_format = "%D%*  %S%?N?(%N)?%*"
+set sidebar_format = "%D%*  %S%?N? (%N)?"
 set sidebar_folder_indent = yes
 set sidebar_indent_string = " "
 set sidebar_divider_char = "|"
@@ -94,6 +89,17 @@ color sidebar_highlight black color44
 # Split mode
 set pager_index_lines = 8
 
-# NotMuch Macros
-#macro index / "<enter-command>unset wait_key<enter><shell-escape>python-notmuch.py<enter><change-folder-readonly>~/.cache/mutt_results<enter>"
-#macro index I "<enter-command>unset wait_key<enter><pipe-message>notmuch-mutt thread<enter><change-folder-readonly>~/.cache/notmuch/mutt/results<enter>"
+set hostname = "localhost"
+
+set mailcap_path = ~/.mutt/mailcap
+
+set nm_default_uri = "notmuch:///home/dgrig/mail"
+set nm_query_type  = threads
+set nm_unread_tag  = unread
+set nm_record      = yes
+set nm_record_tags = "-inbox +sent"
+
+bind index,pager L vfolder-from-query
+bind index,pager I entire-thread
+bind index,pager Y modify-tags
+bind index       a limit
