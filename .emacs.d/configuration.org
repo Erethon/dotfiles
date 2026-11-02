@@ -24,7 +24,7 @@
 #+BEGIN_SRC emacs-lisp
   (show-paren-mode 1)
   (setq show-paren-delay 0)
-  (setq show-trailing-whitespace t)
+  (setq-default show-trailing-whitespace t)
 #+END_SRC
 
 * evil mode
@@ -37,7 +37,6 @@
 
 ** Keybinds
 #+BEGIN_SRC emacs-lisp
-  (define-key evil-normal-state-map (kbd "RET") 'org-return)
   (define-key evil-normal-state-map (kbd "C-l") 'evil-window-next)
   (define-key evil-normal-state-map (kbd "C-k") 'evil-window-up)
   (define-key evil-normal-state-map (kbd "SPC") 'scroll-up-command)
@@ -98,14 +97,12 @@
 #+END_SRC
 
 ** Keybinds
-*** Cycle task states with 't'
+*** Org-mode bindings
 #+BEGIN_SRC emacs-lisp
-  (define-key evil-normal-state-map "t" 'org-todo)
-#+END_SRC
-
-*** Use TAB to expand/collapse sections
-#+BEGIN_SRC emacs-lisp
-  (define-key evil-normal-state-map (kbd "TAB") 'org-cycle)
+  (evil-define-key 'normal org-mode-map
+    (kbd "TAB") #'org-cycle
+    (kbd "RET") #'org-return
+    "t"         #'org-todo)
 #+END_SRC
 
 ** Highlight code in source blocks
@@ -144,11 +141,11 @@ but I'm lacking a keyword for "not applicable anymore".
 #+END_SRC
 
 * org-roam
- ** Set org-roam notes directory
+** Set org-roam notes directory
  #+BEGIN_SRC emacs-lisp
    (setq org-roam-directory "~/Documents/roam")
  #+END_SRC
- ** Keybinds
+** Keybinds
  #+begin_src emacs-lisp
    (global-set-key (kbd "C-c n f") 'org-roam-node-find)
    (global-set-key (kbd "C-c n g") 'org-roam-graph)
@@ -156,7 +153,7 @@ but I'm lacking a keyword for "not applicable anymore".
    (global-set-key (kbd "C-c n c") 'org-roam-capture)
    (global-set-key (kbd "C-c n j") 'org-roam-dailies-capture-today)
  #+end_src
- ** Enable DB autosync
+** Enable DB autosync
  #+begin_src emacs-lisp
    (org-roam-db-autosync-mode)
  #+end_src
