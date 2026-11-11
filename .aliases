@@ -132,6 +132,10 @@ ne() {
     nix edit "nixpkgs#$1"
 }
 
+rbuild() {
+    nix-build --eval-store auto --store ssh-ng://builder -A $1
+}
+
 alias ab="echo 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'"
 alias monitor-desktop="xrandr --output DP-2 --mode 1920x1080 --right-of DP-3 --rotate right"
 alias cal="cal -3"
