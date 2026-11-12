@@ -133,7 +133,10 @@ ne() {
 }
 
 rbuild() {
-    nix-build --eval-store auto --store ssh-ng://builder -A $1
+    nix-build --option restrict-eval true \
+      --option allow-import-from-derivation false \
+      -I "$(pwd -P)" \
+      --eval-store auto --store ssh-ng://builder -A "$1"
 }
 
 alias ab="echo 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'"
