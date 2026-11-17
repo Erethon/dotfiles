@@ -1,2 +1,4 @@
 application/pdf; firefox -p FileOpener %s
 text/html; firefox -p FileOpener %s
+text/calendar; khal import %s; needsterminal
+application/ics; khal import %s; needsterminal
