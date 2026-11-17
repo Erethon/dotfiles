@@ -1,3 +1,7 @@
+#+PROPERTY: header-args:emacs-lisp :tangle yes
+#+begin_src emacs-lisp
+;;; -*- lexical-binding: t -*-
+#+end_src
 * Appearance
 ** Hide the menu bar on top
 #+BEGIN_SRC emacs-lisp
@@ -71,7 +75,7 @@
 ** List of files to parse for org-agenda
 #+BEGIN_SRC emacs-lisp
   (setq org-agenda-files (list "~/Documents/Work/index.org"
-                               "~/Documents/roam"))
+                               "~/.local/share/khalel/calendar.org"))
 #+END_SRC
 
 ** Org-Capture
@@ -97,7 +101,7 @@
 #+END_SRC
 
 ** Keybinds
-*** Org-mode bindings
+*** Org-mode keybinds
 #+BEGIN_SRC emacs-lisp
   (evil-define-key 'normal org-mode-map
     (kbd "TAB") #'org-cycle
@@ -140,6 +144,15 @@ but I'm lacking a keyword for "not applicable anymore".
   (require 'org-tempo)
 #+END_SRC
 
+** Use j/k to move in the org-agenda
+#+BEGIN_SRC emacs-lisp
+  (with-eval-after-load 'org-agenda
+    (define-key org-agenda-mode-map (kbd "j") 'org-agenda-next-line)
+    (define-key org-agenda-mode-map (kbd "k") 'org-agenda-previous-line)
+    (define-key org-agenda-mode-map (kbd "J") 'org-agenda-goto-date)
+    (define-key org-agenda-mode-map (kbd "K") 'org-agenda-capture))
+#+END_SRC
+
 * org-roam
 ** Set org-roam notes directory
  #+BEGIN_SRC emacs-lisp
@@ -158,10 +171,16 @@ but I'm lacking a keyword for "not applicable anymore".
    (org-roam-db-autosync-mode)
  #+end_src
 
+* org-re-reveal
+** Enable org-re-reveal
+#+begin_src emacs-lisp
+  (require 'org-re-reveal)
+#+end_src
+
 * org-contacts
 ** Enable org-contacts
 #+begin_src emacs-lisp
-  (require 'org-contacts)
+;;  (require 'org-contacts)
 #+end_src
 ** Disable usage of Gravatar to fetch avatars
 #+begin_src emacs-lisp
@@ -172,6 +191,69 @@ but I'm lacking a keyword for "not applicable anymore".
 #+begin_src emacs-lisp
   (setq org-contacts-files '("~/Documents/org/PRM/contacts.org"))
 #+end_src
+
+* calfw
+** Enable calfw with org-agenda as the source
+#+BEGIN_SRC emacs-lisp
+  (require 'calfw)
+  (require 'calfw-org)
+#+END_SRC
+
+** Start the week on Monday
+#+BEGIN_SRC emacs-lisp
+  (setq calendar-week-start-day 1)
+#+END_SRC
+
+** Use calfw's own keybinds instead of evil's
+#+BEGIN_SRC emacs-lisp
+  (evil-set-initial-state 'calfw-calendar-mode 'emacs)
+#+END_SRC
+
+** Keybinds
+#+BEGIN_SRC emacs-lisp
+  (evil-leader/set-key "v" 'calfw-org-open-calendar)
+#+END_SRC
+
+** Make j/k move down/up like vim
+#+BEGIN_SRC emacs-lisp
+  (define-key calfw-calendar-mode-map (kbd "j") 'calfw-navi-next-week-command)
+  (define-key calfw-calendar-mode-map (kbd "k") 'calfw-navi-previous-week-command)
+#+END_SRC
+
+* khalel
+** Enable khalel
+#+BEGIN_SRC emacs-lisp
+  (require 'khalel)
+#+END_SRC
+
+** File to import calendar events into
+#+BEGIN_SRC emacs-lisp
+  (setq khalel-import-org-file "~/.local/share/khalel/calendar.org")
+  (setq khalel-import-org-file-confirm-overwrite nil)
+#+END_SRC
+
+** Range of events to import
+#+BEGIN_SRC emacs-lisp
+  (setq khalel-import-start-date "-30d")
+  (setq khalel-import-end-date "+180d")
+#+END_SRC
+
+** Capture template for new events
+#+BEGIN_SRC emacs-lisp
+  (setq khalel-capture-key "e")
+  (khalel-add-capture-template)
+#+END_SRC
+
+** Re-import every 15 minutes
+#+BEGIN_SRC emacs-lisp
+  (run-at-time 60 900 #'khalel-import-events)
+#+END_SRC
+
+** Keybinds
+#+BEGIN_SRC emacs-lisp
+  (global-set-key (kbd "C-c n s") 'khalel-import-events)
+#+END_SRC
+
 * projectile
 ** Enable projectile
 #+BEGIN_SRC emacs-lisp
@@ -267,3 +349,9 @@ but I'm lacking a keyword for "not applicable anymore".
   (setq-default fill-column 80)
   (add-hook 'text-mode-hook #'auto-fill-mode)
 #+END_SRC
+
+*** Make completion case insensitive
+#+begin_src emacs-lisp
+  (setq completion-ignore-case t)
+  (fido-vertical-mode 1)
+#+end_src
