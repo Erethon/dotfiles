@@ -67,11 +67,28 @@
 #+END_SRC
 
 * org-mode
-** List of files to parse for org-agenda
+** Org-Agenda
+*** Enable org-habit
+#+begin_src emacs-lisp
+  (require 'org-habit)
+  (setq org-log-into-drawer t)
+#+end_src
+*** List of files to parse for org-agenda
 #+BEGIN_SRC emacs-lisp
   (setq org-agenda-files (list "~/Documents/Work/index.org"
+                               "~/Documents/roam/20261123103126-habits.org"
                                "~/.local/share/khalel/calendar.org"))
 #+END_SRC
+*** Put habits at the top of the view
+#+begin_src emacs-lisp
+  (with-eval-after-load 'org-agenda
+    (setf (alist-get 'agenda org-agenda-sorting-strategy)
+      '(habit-up time-up urgency-down category-keep)))
+#+end_src
+*** Show habits only for today in org-agenda
+#+begin_src emacs-lisp
+  (setq org-habit-show-habits-only-for-today t)
+#+end_src
 
 ** Org-Capture
 *** Templates
@@ -86,6 +103,9 @@
                                  "* TODO %?\n %T")
                                 ("f" "FOSS" entry (file+olp "~/Documents/Work/index.org" "Erethon" "FOSS")
                                  "* TODO %?\n %T")
+                                ("w" "Weight" table-line
+                                 (file+headline "~/Documents/roam/20261123103126-habits.org" "Weight log")
+                                 "| %u | %^{kg} |" :immediate-finish t)
                                 ("c" "Chores" entry (file+olp "~/Documents/Work/index.org" "Erethon" "Chores or admin work")
                                  "* TODO %?\n %T")))
 #+END_SRC
