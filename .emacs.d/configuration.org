@@ -19,11 +19,6 @@
   (setq org-ellipsis " ↷")
 #+END_SRC
 
-** Add a whitespace in linum-mode
-#+BEGIN_SRC emacs-lisp
-  (setq linum-format "%d ")
-#+END_SRC
-
 ** Highlight matching parentheses
 #+BEGIN_SRC emacs-lisp
   (show-paren-mode 1)
@@ -63,7 +58,7 @@
     "0" 'delete-window
     "'" 'split-window-horizontally
     "\"" 'split-window-vertically
-    "#" 'linum-mode)
+    "#" 'display-line-numbers-mode)
 #+END_SRC
 
 ** Evil Collection
