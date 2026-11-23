@@ -284,7 +284,6 @@ but I'm lacking a keyword for "not applicable anymore".
 ** General settings
 *** Initialize packages
 #+BEGIN_SRC emacs-lisp
-  (setq tls-checktrust t)
   (setq gnutls-verify-error t)
 #+END_SRC
 
@@ -307,9 +306,9 @@ but I'm lacking a keyword for "not applicable anymore".
 *** Backup file location
 #+BEGIN_SRC emacs-lisp
   (setq backup-directory-alist
-        `((".*" . ,"~/tmp/emacs")))
+        `((".*" . ,"~/tmp/emacs/")))
   (setq auto-save-file-name-transforms
-        `((".*" ,"~/tmp/emacs" t)))
+        `((".*" ,"~/tmp/emacs/" t)))
 #+END_SRC
 
 *** Recent files
